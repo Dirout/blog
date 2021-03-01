@@ -1,7 +1,7 @@
 ---
 title: "About"
 layout: page
-permalink: "about.html"
+permalink: "/about.html"
 collection: pages
 author: "Emil & Evan"
 ---
