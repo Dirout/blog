@@ -1,0 +1,12 @@
+//User-agent: *
+//Disallow:
+
+/* To block bots from reading a file or path, add more 'Disallow: ' lines.
+For example:
+
+Disallow: /folder/
+
+Disallow: /folder/file.txt
+
+You can even make it block the root directory! That'll make you invisible to search engines, which could hurt your popularity!
+*/

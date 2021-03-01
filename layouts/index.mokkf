@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+{! snippet head.html !}
+
+<body id="index" class="home">
+<header id="banner" class="body">
+<h1><a href="{{ global.baseurl }}/index.html">{{ global.title }} </a></h1>
+<nav id="menu"><ul>
+<strong>
+{% for my_page in collections["pages"] %}
+{% if my_page.document.frontmatter.title %}
+<a class="page-link" href="{{ my_page.url | prepend: global.baseurl }}">{{ my_page.document.frontmatter.title }}</a>
+{% endif %}
+{% endfor %}
+</strong>
+</ul></nav>
+</header>
+<h2>All articles</h2>
+
+<nav id="menu"><ul>
+
+{{ page.document.content }}
+</ul></nav>
+
+</body>
+
+</html>

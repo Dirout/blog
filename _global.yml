@@ -1,0 +1,5 @@
+locale: "en_US"
+baseurl: "https://MadeByEmil.github.io/blog"
+url: "/blog/"
+title: "Alexis' log"
+tagline: "This is a test page"

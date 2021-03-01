@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<section id="content" class="body">
+<div class="entry-title">
+<h1>
+{{ page.document.frontmatter.title }}
+</h1>
+
+<div class="entry-content">
+{{ page.document.content }}
+</div>
+</section>

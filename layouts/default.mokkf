@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+{! snippet head.html !}
+
+<body>
+
+<div class="main">
+<div class="page-content">
+<div class="page-container">
+{{ page.document.content }}
+</div>
+</div>
+</div>
+
+</body>
+
+</html>

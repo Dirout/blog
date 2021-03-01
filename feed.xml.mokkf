@@ -1,0 +1,21 @@
+---
+permalink: "feed.xml"
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>{{ global.title | escape }}</title>
+<description>{{ global.tagline | escape }}</description>
+<link>{{ global.baseurl }}/</link>
+<atom:link href="{{ "/feed.xml" | prepend: global.baseurl }}" rel="self" type="application/rss+xml"/>
+{% for post in collections["posts"] %}
+<item>
+<title>{{ post.document.frontmatter.title | escape }}</title>
+<description>{{ post.document.content | escape | strip_html }}</description>
+<pubDate>{{ post.document.frontmatter.date }}</pubDate>
+<link>{{ post.url | prepend: global.baseurl }}</link>
+<guid isPermaLink="true">{{ post.url | prepend: global.baseurl }}</guid>
+</item>
+{% endfor %}
+</channel>
+</rss>
