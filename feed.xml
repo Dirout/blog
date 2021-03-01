@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Alexis&#39; log</title>
+<description>This is a test page</description>
+<link>https://MadeByEmil.github.io/blog/</link>
+<atom:link href="https://MadeByEmil.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>Article 1</title>
+<description>
+Article 1
+</description>
+<pubDate>2011-02-17T10:00:00+00:00</pubDate>
+<link>https://MadeByEmil.github.io/blog/posts/2011/02/17/Article 1.html</link>
+<guid isPermaLink="true">https://MadeByEmil.github.io/blog/posts/2011/02/17/Article 1.html</guid>
+</item>
+<item>
+<title>Article 2</title>
+<description>
+Article 2
+</description>
+<pubDate>2011-02-17T10:00:00+00:00</pubDate>
+<link>https://MadeByEmil.github.io/blog/posts/2011/02/17/Article 2.html</link>
+<guid isPermaLink="true">https://MadeByEmil.github.io/blog/posts/2011/02/17/Article 2.html</guid>
+</item>
+<item>
+<title>Article 3</title>
+<description>
+Article 3
+</description>
+<pubDate>2011-02-17T10:00:00+00:00</pubDate>
+<link>https://MadeByEmil.github.io/blog/posts/2011/02/17/Article 3.html</link>
+<guid isPermaLink="true">https://MadeByEmil.github.io/blog/posts/2011/02/17/Article 3.html</guid>
+</item>
+<item>
+<title>This is a super article !</title>
+<description>
+Some content here !
+<h1>This is a simple title</h1>
+<p>And here comes the cool stuff_.</p>
+<p>&lt;img src=&quot;https://raw.githubusercontent.com/getpelican/pelican/4861a15774c176e13f6e5ba811cf48762428622d/samples/content/pictures/Sushi.jpg&quot; width=&quot;600px&quot; height=&quot;450px&quot; alt=&quot;alternate text&quot; /&gt;</p>
+<p>&lt;img src=&quot;https://raw.githubusercontent.com/getpelican/pelican/4861a15774c176e13f6e5ba811cf48762428622d/samples/content/pictures/Sushi_Macro.jpg&quot; width=&quot;600px&quot; height=&quot;450px&quot; alt=&quot;alternate text&quot; /&gt;</p>
+<pre><code>
+   &amp;gt;&amp;gt;&amp;gt; from ipdb import set_trace
+   &amp;gt;&amp;gt;&amp;gt; set_trace()
+
+</code></pre>
+<p>→ And now try with some utf8 hell: ééé</p>
+<p>&lt;!– .. _stuff: –&gt;
+</description>
+<pubDate>2011-02-17T10:00:00+00:00</pubDate></p>
+<link>https://MadeByEmil.github.io/blog/posts/2011/02/17/This is a super article !.html</link>
+<guid isPermaLink="true">https://MadeByEmil.github.io/blog/posts/2011/02/17/This is a super article !.html</guid>
+</item>
+<item>
+<title>A markdown powered article</title>
+<description>
+You&#39;re mutually oblivious.
+</description>
+<pubDate>2011-04-20T10:00:00+00:00</pubDate>
+<link>https://MadeByEmil.github.io/blog/posts/2011/04/20/A markdown powered article.html</link>
+<guid isPermaLink="true">https://MadeByEmil.github.io/blog/posts/2011/04/20/A markdown powered article.html</guid>
+</item>
+</channel>
+</rss>
