@@ -3,6 +3,7 @@ title: "Hello!"
 author: "Evan Burke"
 permalink: date
 collection: "posts"
+layout: "post"
 date: "2020-03-01T15:28:00+05:00"
 ---
 
