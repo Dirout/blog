@@ -2,8 +2,9 @@
 title: "About"
 layout: page
 permalink: "/about.html"
-collection: pages
-author: "Emil & Evan"
+collection: "pages"
+author: "Em & Evan"
 ---
 
 Welcome to our blog!
+This website is currently being worked on. Check back later, alligator!

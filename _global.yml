@@ -3,3 +3,6 @@ baseurl: "https://MadeByEmil.github.io/blog"
 url: "/blog/"
 title: "Mousehole"
 tagline: "Musings from the mice"
+header_pages:
+  - title: "About"
+    url: "/about.html"

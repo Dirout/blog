@@ -1,14 +1,12 @@
 ---
 title: "Hello!"
-author: "Evan Burke"
+author: "Em & Evan"
 permalink: date
 collection: "posts"
 layout: "post"
-date: "2020-03-01T15:28:00+05:00"
+date: "2021-03-01T15:28:00+05:00"
 ---
 
-# Header
-
-*This is bold*
-
-**Italics!**
+This blog is currently *under construction*!
+Once development on the technical aspects is complete, this blog will be populated with content.
+Stay tuned!

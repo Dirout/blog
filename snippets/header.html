@@ -1,0 +1,12 @@
+<header id="banner" class="body">
+<h1><a href="{{ global.baseurl }}/index.html">{{ global.title }}</a></h1>
+<nav id="menu">
+<ul>
+<strong>
+{% for my_page in global.header_pages %}
+<a class="page-link" href="{{ my_page.url | prepend: global.baseurl }}">{{ my_page.title }}</a>
+{% endfor %}
+</strong>
+</ul>
+</nav>
+</header>

@@ -4,7 +4,7 @@
 {! snippet head.html !}
 
 <body>
-
+{! snippet header.html !}
 <div class="main">
 <div class="page-content">
 <div class="page-container">
