@@ -8,13 +8,13 @@
 <item>
 <title>Hello!</title>
 <description>
-# Header
-<p><em>This is bold</em></p>
-<p><strong>Italics!</strong>
+This blog is currently *under construction*!
+Once development on the technical aspects is complete, this blog will be populated with content.
+Stay tuned!
 </description>
-<pubDate>2020-03-01T15:28:00+05:00</pubDate></p>
-<link>https://MadeByEmil.github.io/blog/posts/2020/03/01/Hello!.html</link>
-<guid isPermaLink="true">https://MadeByEmil.github.io/blog/posts/2020/03/01/Hello!.html</guid>
+<pubDate>2021-03-01T15:28:00+05:00</pubDate>
+<link>https://MadeByEmil.github.io/blog/posts/2021/03/01/Hello!.html</link>
+<guid isPermaLink="true">https://MadeByEmil.github.io/blog/posts/2021/03/01/Hello!.html</guid>
 </item>
 </channel>
 </rss>
