@@ -13,10 +13,10 @@ menus:
     url: https://MadeByEmil.github.io/blog/
     external: false
   - title: archive
-    url: https://MadeByEmil.github.io/blog/archive/
+    url: https://MadeByEmil.github.io/blog/archive.html
     external: false
   - title: about
-    url: https://MadeByEmil.github.io/blog/about/
+    url: https://MadeByEmil.github.io/blog/about.html
     external: false
 authors:
   em:
