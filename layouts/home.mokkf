@@ -4,7 +4,7 @@ home: true
 author: both
 ---
 
-<h3 class="posts-item-note" aria-label="Recent Posts">Recent Posts</h3>
+<h3 class="posts-item-note" aria-label="Posts">Posts</h3>
 {%- for post in collections["posts"] -%}
 <article class="post-item">
 <span class="post-item-date">{{ post.i_day }} {{ post.long_month }} {{ post.year }}</span>
