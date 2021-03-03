@@ -30,7 +30,7 @@
 <meta name="twitter:title" content="{% if page.document.frontmatter.title %}{{ page.document.frontmatter.title | escape }} | {{ global.authors[page.document.frontmatter.author].name }}{% else %}{{ global.title | escape }}{% endif %}" />
 <meta name="twitter:url" content="{{ page.url  | remove: 'index.html' | remove: '.html' | prepend: global.url }}" />
 <meta name="twitter:site" content="{{ global.title }}" />
-<meta name="twitter:creator" content="@{{ global.authors[page.document.frontmatter.author].name }}" />
+<meta name="twitter:creator" content="{{ global.authors[page.document.frontmatter.author].name }}" />
 <meta name="twitter:description"{% if page.document.frontmatter.description %} content="{{ page.document.frontmatter.description | strip_html | truncate: 200 | escape }}" {% else %} content="{{ global.description | strip_html | truncate: 200 | escape }}" {% endif %} />
 {% if page.document.frontmatter.image %}
 <meta name="twitter:image" content="{{ page.document.frontmatter.image | prepend: global.url }}" />
