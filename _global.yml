@@ -1,8 +1,51 @@
 locale: "en_US"
-baseurl: "https://MadeByEmil.github.io/blog"
-url: "/blog/"
+url: "https://MadeByEmil.github.io/blog/"
+url: "https://MadeByEmil.github.io/blog/"
 title: "Mousehole"
-tagline: "Musings from the mice"
-header_pages:
-  - title: "About"
-    url: "/about.html"
+description: "Musings from the mice"
+image: assets/img/ogp.png
+repo: https://github.com/MadeByEmil/blog
+mode: dark
+tags:
+  - "testing"
+menus:
+  - title: home
+    url: https://MadeByEmil.github.io/blog/
+    external: false
+  - title: archive
+    url: https://MadeByEmil.github.io/blog/archive/
+    external: false
+  - title: about
+    url: https://MadeByEmil.github.io/blog/about/
+    external: false
+authors:
+  em:
+    name: Em Sayahi
+    bio: >-
+      A wacky little kitty cat.
+    username: emilsayahi
+    github: MadeByEmil
+    twitter: twitter_username
+    facebook: facebook_username
+    email: limesayahi@gmail.com
+    avatar: https://MadeByEmil.github.io/blog/assets/img/avatar.png
+  evan:
+    name: Evan Gabriel Burke
+    bio: >-
+      A funny little dancing rodent.
+    username: evanb619
+    github: evanb619
+    twitter: twitter_username
+    facebook: facebook_username
+    email: evanburke619@gmail.com
+    avatar: https://MadeByEmil.github.io/blog/assets/img/avatar.png
+  both:
+    name: Mousehole
+    bio: >-
+      Musings from the mice
+    username: mousehole
+    github: MadeByEmil
+    twitter: twitter_username
+    facebook: facebook_username
+    email: limesayahi@gmail.com
+    avatar: https://MadeByEmil.github.io/blog/assets/img/avatar.png

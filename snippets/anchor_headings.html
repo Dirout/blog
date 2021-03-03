@@ -1,0 +1,79 @@
+{% capture headingsWorkspace %}
+
+  {% assign minHeader = include.h_min | default: 1 %}
+  {% assign maxHeader = include.h_max | default: 6 %}
+  {% assign beforeHeading = include.beforeHeading %}
+  {% assign nodes = include.html | split: '<h' %}
+
+  {% capture edited_headings %}{% endcapture %}
+
+  {% for _node in nodes %}
+    {% capture node %}{{ _node | strip }}{% endcapture %}
+
+    {% if node == "" %}
+      {% continue %}
+    {% endif %}
+
+    {% assign nextChar = node | replace: '"', '' | strip | slice: 0, 1 %}
+    {% assign headerLevel = nextChar | times: 1 %}
+
+    <!-- If the level is cast to 0, it means it's not a h1-h6 tag, so let's try to fix it -->
+    {% if headerLevel == 0 %}
+      {% if nextChar != '<' and nextChar != '' %}
+        {% capture node %}<h{{ node }}{% endcapture %}
+      {% endif %}
+
+      {% capture edited_headings %}{{ edited_headings }}{{ node }}{% endcapture %}
+      {% continue %}
+    {% endif %}
+
+    {% assign _workspace = node | split: '</h' %}
+    {% assign _idWorkspace = _workspace[0] | split: 'id="' %}
+    {% assign _idWorkspace = _idWorkspace[1] | split: '"' %}
+    {% assign html_id = _idWorkspace[0] %}
+
+    {% capture _hAttrToStrip %}{{ _workspace[0] | split: '>' | first }}>{% endcapture %}
+    {% assign header = _workspace[0] | replace: _hAttrToStrip, '' %}
+
+    <!-- Build the anchor to inject for our heading -->
+    {% capture anchor %}{% endcapture %}
+
+    {% if html_id and headerLevel >= minHeader and headerLevel <= maxHeader %}
+      {% capture anchor %}href="#{{ html_id }}"{% endcapture %}
+
+      {% if include.anchorClass %}
+        {% capture anchor %}{{ anchor }} class="{{ include.anchorClass }}"{% endcapture %}
+      {% endif %}
+
+      {% if include.anchorTitle %}
+        {% capture anchor %}{{ anchor }} title="{{ include.anchorTitle | replace: '%heading%', header }}"{% endcapture %}
+      {% endif %}
+
+      {% if include.anchorAttrs %}
+        {% capture anchor %}{{ anchor }} {{ include.anchorAttrs }}{% endcapture %}
+      {% endif %}
+
+      {% capture anchor %}<a {{ anchor }}>{{ include.anchorBody | replace: '%heading%', header | default: '' }}</a>{% endcapture %}
+
+      <!-- In order to prevent adding extra space after a heading, we'll let the 'anchor' value contain it -->
+      {% if beforeHeading %}
+        {% capture anchor %}{{ anchor }} {% endcapture %}
+      {% else %}
+        {% capture anchor %} {{ anchor }}{% endcapture %}
+      {% endif %}
+    {% endif %}
+
+    {% capture new_heading %}
+      <h{{ _hAttrToStrip }}
+        {{ include.bodyPrefix }}
+        {% if beforeHeading %}
+          {{ anchor }}{{ header }}
+        {% else %}
+          {{ header }}{{ anchor }}
+        {% endif %}
+        {{ include.bodySuffix }}
+      </h{{ _workspace | last }}
+    {% endcapture %}
+    {% capture edited_headings %}{{ edited_headings }}{{ new_heading }}{% endcapture %}
+  {% endfor %}
+{% endcapture %}{% assign headingsWorkspace = '' %}{{ edited_headings | strip }}

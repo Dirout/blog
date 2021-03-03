@@ -3,7 +3,7 @@ title: "About"
 layout: page
 permalink: "/about.html"
 collection: "pages"
-author: "Em & Evan"
+author: both
 ---
 
 Welcome to our blog!

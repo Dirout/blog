@@ -1,0 +1,31 @@
+<footer class="footer">
+<a class="footer_item" href="{{ global.url }}/feed.xml">rss</a>
+<span class="footer_item">&copy; 2021</span>
+<small class="footer_copyright">
+<a
+href="https://github.com/madebyemil/blog"
+target="_blank"
+rel="noreferrer noopener"
+>{{ global.title }}</a
+>
+</small>
+</footer>
+<script src="{{ global.url }}/assets/js/main.js" defer="defer"></script>
+
+{%- if page.document.frontmatter.google_analytics -%}
+<script src="{{ global.url }}/assets/js/galite.js"></script>
+<script>
+var galite = galite || {};
+galite.UA = "{{ global.google_analytics }}";
+</script>
+{%- endif -%}
+{%- if page.url == '/archive/' -%}
+<script src="{{ global.url }}/assets/js/search.min.js"></script>
+<script>
+    var sjs = SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('search-results'),
+      json: '{{ global.url }}/assets/search.json',
+    });
+</script>
+{%- endif -%}

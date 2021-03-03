@@ -1,0 +1,31 @@
+---
+title: Tags
+permalink: "/tags.html"
+layout: page
+author: both
+---
+
+<div class="archive-tags">
+<a class="tag-item" href="#">all</a>
+{%- for tag in global.tags -%}
+{% capture name %}{{ tag | first }}{% endcapture %}
+<a class="tag-item" href="#{{name}}">{{ name }}</a>
+{%- endfor -%}
+</div>
+
+{%- for tag in global.tags -%}
+{%- capture name -%}{{ tag | first }}{%- endcapture -%}
+<h2 id="{{ name }}">{{ name | upcase }}</h2>
+{%- for post in collections["posts"] -%}
+{% if post.document.frontmatter.tags %}
+{% if post.document.frontmatter.tags contains tag %}
+<article class="post-item" id="results-container">
+<span class="post-item-date">{{ post.i_day }} {{ post.long_month }} {{ post.year }}</span>
+<h3 class="post-item-title">
+<a href="{{ post.url | prepend: global.url }}">{{ post.document.frontmatter.title | escape }}</a>
+</h3>
+</article>
+{% endif %}
+{% endif %}
+{%- endfor -%}
+{%- endfor -%}
