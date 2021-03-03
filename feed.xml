@@ -1,20 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-<channel>
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 <title>Mousehole</title>
-<description>Musings from the mice</description>
-<link>https://MadeByEmil.github.io/blog/</link>
-<atom:link href="https://MadeByEmil.github.io/blog/feed.xml" rel="self" type="application/rss+xml"/>
-<item>
+<link href="https://MadeByEmil.github.io/blog//atom.xml" rel="self"/>
+<link href="https://MadeByEmil.github.io/blog//"/>
+<id>https://MadeByEmil.github.io/blog/</id>
+<entry>
+<author>
+<name>Mousehole</name>
+<email>limesayahi@gmail.com</email>
+</author>
 <title>Hello!</title>
-<description>
+<link href="https://MadeByEmil.github.io/blog//posts/2021/03/01/Hello!.html"/>
+<updated>2021-03-01T15:28:00+05:00</updated>
+<id>https://MadeByEmil.github.io/blog//posts/2021/03/01/Hello!.html</id>
+<content type="html">
 This blog is currently *under construction*!
 Once development on the technical aspects is complete, this blog will be populated with content.
 Stay tuned!
-</description>
-<pubDate>2021-03-01T15:28:00+05:00</pubDate>
-<link>https://MadeByEmil.github.io/blog/posts/2021/03/01/Hello!.html</link>
-<guid isPermaLink="true">https://MadeByEmil.github.io/blog/posts/2021/03/01/Hello!.html</guid>
-</item>
-</channel>
-</rss>
+</content>
+</entry>
+</feed>
