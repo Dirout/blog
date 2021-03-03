@@ -66,18 +66,13 @@ href="{{ global.url }}/tags.html#{{tag | downcase | slugify}}">{{tag | upcase }}
 
 <div class="page-content" itemprop="articleBody">
 {{ page.document.content }}
-{% if page.document.frontmatter.tweet %}
-<p>Comments this article on
-<a href="https://twitter.com/{{global.twitter}}/status/{{page.document.frontmatter.tweet}}">Twitter</a>.
-</p>
-{% endif %}
 </div>
 </article>
 
 </main>
 
 {% if page.document.frontmatter.modified %}
-<small class="post-updated-at">updated_at {{page.document.frontmatter.modified | date: "%d-%m-%Y"}}</small>
+<small class="post-updated-at">Updated {{ page.document.frontmatter.modified | date: "%d-%m-%Y" }}</small>
 {% endif %}
 
 {% include footer.html %}
