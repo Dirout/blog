@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="application-name" content="Mousehole" />
+<meta name="apple-mobile-web-app-status-bar-style" content="#fff" />
+<meta name="apple-mobile-web-app-title" content="Mousehole" />
+<title>
+A Perpetual Morning - Mousehole
+</title>
+<link rel="alternate" href="https://Dirout.github.io/blog/posts/2019/07/01/A Perpetual Morning" hreflang="en" />
+<link rel="canonical" href="https://Dirout.github.io/blog/posts/2019/07/01/A Perpetual Morning" />
+<meta name="description"  content="Musings from the mice"  />
+<meta name="referrer" content="no-referrer-when-downgrade" />
+<meta property="og:site_name" content="A Perpetual Morning | Evan Gabriel Burke " />
+<meta property="og:title" content="A Perpetual Morning | Evan Gabriel Burke" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://Dirout.github.io/blog/posts/2019/07/01/A Perpetual Morning" />
+<meta property="og:description"  content="Musings from the mice"  />
+<meta property="og:image" content="https://Dirout.github.io/blog/assets/img/ogp.png" />
+<meta property="og:image:width" content="640" />
+<meta property="og:image:height" content="640" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="A Perpetual Morning | Evan Gabriel Burke" />
+<meta name="twitter:url" content="https://Dirout.github.io/blog/posts/2019/07/01/A Perpetual Morning" />
+<meta name="twitter:site" content="Mousehole" />
+<meta name="twitter:creator" content="Evan Gabriel Burke" />
+<meta name="twitter:description" content="Musings from the mice"  />
+<meta name="twitter:image" content="https://Dirout.github.io/blog/assets/img/ogp.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://Dirout.github.io/blog/assets/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://Dirout.github.io/blog/assets/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://Dirout.github.io/blog/assets/favicons/favicon-16x16.png" />
+<link rel="mask-icon" href="https://Dirout.github.io/blog/assets/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+<meta name="apple-mobile-web-app-title" content="Mousehole" />
+<meta name="application-name" content="Mousehole" />
+<meta name="msapplication-TileColor" content="#da532c" />
+<meta name="theme-color" content="#2c2c2c" />
+<link rel="stylesheet" href="https://Dirout.github.io/blog/assets/css/style.css" />
+</head>
+<body data-theme="dark" class="notransition">
+<script>
+  const body = document.body;
+  const data = body.getAttribute("data-theme");
+
+  const initTheme = (state) => {
+    if (state === "dark") {
+      body.setAttribute("data-theme", "dark");
+    } else if (state === "light") {
+      body.removeAttribute("data-theme");
+    } else {
+      localStorage.setItem("theme", data);
+    }
+  };
+
+  initTheme(localStorage.getItem("theme"));
+
+  setTimeout(() => body.classList.remove("notransition"), 75);
+</script>
+<div class="navbar" role="navigation">
+  <nav class="menu">
+    <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+    <label for="menu-trigger">
+      <span class="menu-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
+          />
+        </svg>
+      </span>
+    </label>
+    <a id="mode">
+      <svg
+        class="mode-sunny"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 512 512"
+      >
+        <title>Day</title>
+        <line
+          x1="256"
+          y1="48"
+          x2="256"
+          y2="96"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="256"
+          y1="416"
+          x2="256"
+          y2="464"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="403.08"
+          y1="108.92"
+          x2="369.14"
+          y2="142.86"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="142.86"
+          y1="369.14"
+          x2="108.92"
+          y2="403.08"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="464"
+          y1="256"
+          x2="416"
+          y2="256"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="96"
+          y1="256"
+          x2="48"
+          y2="256"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="403.08"
+          y1="403.08"
+          x2="369.14"
+          y2="369.14"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="142.86"
+          y1="142.86"
+          x2="108.92"
+          y2="108.92"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <circle
+          cx="256"
+          cy="256"
+          r="80"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+      </svg>
+      <svg
+        class="mode-moon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 512 512"
+      >
+        <title>Night</title>
+        <line
+          x1="256"
+          y1="48"
+          x2="256"
+          y2="96"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="256"
+          y1="416"
+          x2="256"
+          y2="464"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="403.08"
+          y1="108.92"
+          x2="369.14"
+          y2="142.86"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="142.86"
+          y1="369.14"
+          x2="108.92"
+          y2="403.08"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="464"
+          y1="256"
+          x2="416"
+          y2="256"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="96"
+          y1="256"
+          x2="48"
+          y2="256"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="403.08"
+          y1="403.08"
+          x2="369.14"
+          y2="369.14"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="142.86"
+          y1="142.86"
+          x2="108.92"
+          y2="108.92"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <circle
+          cx="256"
+          cy="256"
+          r="80"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+      </svg>
+    </a>
+    <div class="trigger">
+      <div class="trigger-container"><a class="menu-link" href="https://Dirout.github.io/blog/">home</a><a class="menu-link" href="https://Dirout.github.io/blog/archive.html">archive</a><a class="menu-link" href="https://Dirout.github.io/blog/about.html">about</a><a class="menu-link rss" href="https://Dirout.github.io/blog/feed.xml">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="17"
+            height="17"
+            viewBox="0 0 512 512"
+            fill="#ED812E"
+          >
+            <title>RSS</title>
+            <path
+              d="M108.56,342.78a60.34,60.34,0,1,0,60.56,60.44A60.63,60.63,0,0,0,108.56,342.78Z"
+            />
+            <path
+              d="M48,186.67v86.55c52,0,101.94,15.39,138.67,52.11s52,86.56,52,138.67h86.66C325.33,312.44,199.67,186.67,48,186.67Z"
+            />
+            <path
+              d="M48,48v86.56c185.25,0,329.22,144.08,329.22,329.44H464C464,234.66,277.67,48,48,48Z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+</div>
+<div class="wrapper post">
+<main class="page-content" aria-label="Content">
+<article itemscope itemtype="https://schema.org/BlogPosting">
+<header class="header">
+<div class="tags">
+<span itemprop="keywords">
+<p><a class="tag"
+href="https://Dirout.github.io/blog/tags.html#short-story">SHORT STORY</a></p>
+</span>
+</div>
+<h1 class="header-title" itemprop="headline">A Perpetual Morning</h1>
+<div class="post-meta">
+<time datetime="2019-07-01T21:19:00+05:00" itemprop="datePublished">
+1 July 2019
+</time>
+<span itemprop="author" itemscope itemtype="https://schema.org/Person">
+<span itemprop="name">Evan Gabriel Burke</span>
+</span>
+<p><span hidden itemprop="publisher" itemtype="Person">Evan Gabriel Burke</span></p>
+<span hidden itemprop="mainEntityOfPage">
+<p style="text-indent: 30pt"><em>The bleakest skies are not those of winter</em>. That sentence, a mere phrase,  was the result of three years. Each day, all three years, spent on eight unchanged words. Hell, I wasn’t even sure I knew what I meant by it. The sentence just seemed to come to me one day and I had never felt more compelled to write something.  Meg had always said that writing was a pointless venture. Apparently, she was right.</p>
+<p style="text-indent: 30pt">I paused for a moment and let the cursor blink. Then, as I had done so many times before, got up from my desk and headed out through the living room to the back door. <em>The bleakest skies are not those of winter.</em> A damned blatant lie. Looking outside, I could see that the sky was in fact undeniably bleak today (the bleakest I had ever seen it), along with the rest of the winter-worn, half-derelict, Midwestern landscape. I saw as well that the ice of early February had killed the snowdrops that were starting to come up in the lot next door and stared at them for a minute.</p>
+<p style="text-indent: 30pt">All three years. What did it matter anyway? The novel wasn’t ever going to be written in the first place. I’d never meant to write it and yet I was still waiting and trying to write. Undoubtedly, I never would.</p>
+<p style="text-indent: 30pt">A gust of wind caught my attention. It was 10 A.M., making today the eighth day of my sabbatical, or, alternatively, the eighth day that I had risen, lacking  any ambition, and crept to the back patio to smoke after Meg had left and I had canned at least seven drafts. She never liked it when I smoked because by her observation it made me irritable and tired. This was something that I could not dispute. It became a daily ritual for me, nonetheless.</p>
+<p style="text-indent: 30pt">From my back pocket, I pulled out a half-empty pack that I had been working on over the past two days. The abraded texture of the box relieved my shaking. I took out my Clipper and lit one of the cigarettes, then stayed outside and smoked the rest of the pack. I went back inside again at noon but didn’t try to write again until later on.</p>
+<p style="text-indent: 30pt">Sometime after four o’clock, Amos, our neighbor in the apartment above, stopped by for coffee and a cigarette or two as he did most days. Amos, whose appearance rendered a deep weariness, was short but exceptionally wiry for his age. His salient features, though, were his pale, slate-colored eyes that reminded me of an overcast daybreak in November. It was the eyes that always spoke to me. He was 57 years old, employed as a part-time janitor, and a veteran of no more than six failed marriages and engagements. In all, he was a fine man to talk with. He never said much about himself, but instead listened and gave whatever forthright advice he could offer.</p>
+<p style="text-indent: 30pt">We sat on the back porch in the lawn chairs and watched the evening snow and listened to the accompanying sound of cars on the highway nearby. It was cold, but not unbearable.</p>
+<p style="text-indent: 30pt">After pouring him a cup of coffee and lighting another cigarette, I said what I had always said.</p>
+<p style="text-indent: 30pt">“It’s the first sentence. The first damned sentence, Amos. I don’t know what else to say. I’ve been sitting here for the past three years writing reviews and trying to make a good story when I can. I know what I want to write down, what I want to have, but I can’t figure out just how to say it. I’ve tried, and I really have tried, you know? I don’t know what happened and I’m tired of writing bullshit.”</p>
+<p style="text-indent: 30pt">Amos sipped his coffee and looked out toward the road.</p>
+<p style="text-indent: 30pt">“I don’t know what to tell you this time. I’ve never tried writing anything real before in my life and I guess I don’t know what I would do if I were you either. Sometimes you just have to wait until something good comes to you.”</p>
+<p style="text-indent: 30pt">“Well, shit. Guess that solves my problems then.”</p>
+<p style="text-indent: 30pt">We both chuckled and didn’t say anything else for a while thereafter. This wasn’t uncommon when we talked. It was a tacit principle of our association that some things were better left unanswered.</p>
+<p style="text-indent: 30pt">We continued to listen to the highway, finished a pot of coffee and most of another pack, and went inside. The snow had picked up and all but the incandescent porch light was invisible then.</p>
+<p style="text-indent: 30pt">Meg came home at 8:04 and promptly asked that Amos leave for the night. Amos left, thus leaving Meg and I standing alone together, face to face, in our front room.</p>
+<p style="text-indent: 30pt">Meg looked at me, walked to the counter, and with an almost inaudible sigh, placed down her coat and bag. I was not a stranger to these dangerously tired sighs of hers. She looked up at me and was silent for a moment.</p>
+<p style="text-indent: 30pt">“Simon, really? You know I can’t stand Amos spending all of his time at our apartment and you know I can’t stand it when you sit around here smoking all day, especially during the week,” Her tone turned colder and angrier, as did the condition of the weather outside.</p>
+<p style="text-indent: 30pt">”Can I come home for one goddamned day and not be disappointed? One goddamned day? Is this what it’s going to be like? What’s happened to you? I can’t understand why on Earth you’d rather sit around and smoke all day, killing yourself, wallowing in self-pity about your writing with a 60-year-old janitor, for Christ’s sake, instead of doing your damned job. What have I told you? Why can’t you get it through your head, Simon? You’re not trying, and I’m trying, but goddamnit, Simon, you’re not! You’ve been a terrible boyfriend recently and you’re never going to get published because you never-”</p>
+<p style="text-indent: 30pt">At this point I had stopped listening as Meg continued to yell until she struck me across the face, bringing my attention back to her. My lower lip stung momentarily and began bleeding.</p>
+<p style="text-indent: 30pt">I couldn’t blame her, really. I never could. She had a rough job and a burdened mind and an ineffective way of coping with them. Excessive drinking, inevitably, numbed both her pain and her capacity for self-restraint. I couldn’t ever blame her, though, even through the screaming and the hitting and hot, maudlin tears that were being directed at me. I thought I loved her in a way that I could never seem to understand except that it hurt and I never asked why.</p>
+<p style="text-indent: 30pt">Then, swiftly, as imperceptibly as one falls asleep after remembering a dream and for reasons that I could not yet comprehend, I remembered the day my father died.</p>
+<br>
+<br>
+<br>
+<p style="text-indent: 30pt">I hardly remember the death of my father, though pieces of it seem to come back every so often. They come dimly and at times when I find myself least likely to have thought of them at all. Perhaps such an event might stand out among a person’s memories, but by some manner of unconscious suppression or alteration I struggle to recollect more than broken-up scenes and nearly-familiar feelings. Regardless, as a droplet of blood ran from my lip and down my chin (Meg maintained long, well-manicured nails, you see), I thought of him.</p>
+<p style="text-indent: 30pt">He had died of alcohol poisoning after drinking two bottles of whiskey in quick succession. I was not aware of this until the hours after, however, when I came home from school in the evening and found him at the kitchen table. My mother, arriving home shortly after me, called an ambulance and followed it to the hospital without so much as a word to me. I never saw him again, excepting the brief funeral she convened at the local chapel.</p>
+<p style="text-indent: 30pt">Indisputably, things change when someone dies. I mean this particularly in the sense that after a while, the expectation of life as you knew it goes away and you accept the fact that a death has happened and that you will never be able to do anything about it but move on. Of course, this is precisely what happened to me in the circumstance of my father’s death. He was a good man, but rather absent at times, and I loved him despite this, and despite having known that he would die by his drunkenness eventually. Yet literal deaths are not the only circumstances in which such a change in expectation occurs. I suppose, alike to the way that I both anticipated and accepted my father’s death, that was, in most respects, how I felt about Meg.</p>
+<p style="text-indent: 30pt">See, I loved her because I needed her in a way. I needed her a lot. I do not leave myself blameless when I state that her worrying, along with the stress of her daily life, were factors that led her to be whom she was in the evenings. Nevertheless, and from the beginning, I felt that she would reach her breaking point, or two successive bottles, so to speak, before we would reach a mutual and seamless decline in our love for one another. Even then, I don’t know what I would have done without her, regardless of her strong apprehension toward my writing, for the past three years.
+<p style="text-indent: 30pt">My flashback ended and I sat down, still somewhat dazed, in the chair as Meg said nothing, turned, and went into the bedroom. Our apartment was silent except for the sound of the heater and a muffled television from the room next door.</p>
+<p style="text-indent: 30pt">Fifteen minutes passed before I entered the bedroom after her. I saw that she had fallen asleep without bothering to get under the comforter or take off her shoes and went back out to get her a blanket. Then, without much thought, I pulled out my rucksack from under the bed and packed for an indefinite amount of time away. I just needed some time. Any at all.</p>
+<p style="text-indent: 30pt">The apartment was noiseless now and Meg was deeply asleep. As quietly as I could, I retrieved my laptop, wrote a quick note on a pad of paper, exited and locked the apartment, then headed up the stairwell to find Amos.</p>
+<p style="text-indent: 30pt">Amos did not lock his door most nights. Any individuals who took to burglarizing him would first find themselves sorely disappointed by the sparse belongings inside and thereupon shot. Tonight, though, I thought to enter his apartment before knocking. I gathered that he would be expecting me at some point after Meg came home.</p>
+<p style="text-indent: 30pt">Amos’s apartment retained the strong, intermingled scents of tobacco and birch, as chain-smoking and wood carving were his primary occupations. This was difficult not to be reminded of whenever I opened his door, or when anyone did, for that matter. I stepped inside and turned to the living room to see Amos sitting on his couch and carving the figure of a bird. A barn swallow in flight, it seemed. His ability as a craftsman was truly impressive.</p>
+<p style="text-indent: 30pt">“How’d it go?”</p>
+<p style="text-indent: 30pt">“About as well as it usually does.”</p>
+<p style="text-indent: 30pt">“Not too bad this time?”</p>
+<p style="text-indent: 30pt">“Well, I am here.”</p>
+<p style="text-indent: 30pt">“Yep. You need a place to sleep, right? The couch is all yours, if you want it.”</p>
+<p style="text-indent: 30pt">“Much obliged.”</p>
+<p style="text-indent: 30pt">“Give me a second and I’ll take care of the wood shavings.”
+Amos swept his work off of the couch and produced a large wool blanket from a chest nearby.</p>
+<p style="text-indent: 30pt">“This should work for you.”</p>
+<p style="text-indent: 30pt">“It’s just fine for tonight. Thanks again for letting me stay.”</p>
+<p style="text-indent: 30pt">“Don’t worry about it; you’re good company anyway. Want some coffee? I just put a pot on.”</p>
+<p style="text-indent: 30pt">“I’ll take a cup, if you don’t mind.”</p>
+<p style="text-indent: 30pt">“You bet.”</p>
+<p style="text-indent: 30pt">Amos’ apartment had one bedroom, one bathroom, a modest kitchenette, and a room just wide enough to be considered a living area. As a result, it was easy to find oneself feeling all too close to one’s fellow inhabitant while inside. I didn't have the option of sleeping somewhere else, small though the place was. About a minute later, Amos reentered the room carrying two cups of coffee.</p>
+<p style="text-indent: 30pt">“It looks like the weather’s as good as it’ll get tonight. How about the balcony?”</p>
+<p style="text-indent: 30pt">Amos handed me a cup of coffee.</p>
+<p style="text-indent: 30pt">“Why not?”</p>
+<p style="text-indent: 30pt">We put on our coats and took the pot of coffee out onto the balcony. The air was motionless and the world seemed immersed in a restless sleep: a few cars moved by on the highway and lights from the city would flicker every so often. I looked out over the railing, past the city, and to the horizon. Funny how fast Prussian blue becomes black in the winter. It’s cold and things just seem to slip by too subtly to notice.</p>
+<p style="text-indent: 30pt">“You want to talk about it?”</p>
+<p style="text-indent: 30pt">“Not really. Not this time. I’d say it’s about done.”</p>
+<p style="text-indent: 30pt">“Was it that bad?”</p>
+<p style="text-indent: 30pt">“Not the worst, actually. I’m just tired of it, that’s all.”</p>
+<p style="text-indent: 30pt">“Have any idea what you’re doing next?”</p>
+<p style="text-indent: 30pt">“Shit, I don’t have any idea what I’m doing now.”</p>
+<p style="text-indent: 30pt">“It’s your apartment, isn’t it? If you’re done putting up with the fits, just tell her she’s got a couple days to get her stuff and go. You can’t keep it up: either that woman’s going to kill you with her yelling, or you’re gonna kill yourself by dealing with it forever. It’s up to you, but I’d get the hell out of there. You knew it was gonna happen sometime.”</p>
+<p style="text-indent: 30pt">“She’s dealing with a lot, Amos.”</p>
+<p style="text-indent: 30pt">“So are you, pal.”</p>
+<p style="text-indent: 30pt">“So what?”</p>
+<p style="text-indent: 30pt">“So what? You get the hell out of there, that’s what. You’re wasting your time and you know it. Simon, there’s a point when you need to stop putting up with something and wasting your life, and that’s right now.”</p>
+<p style="text-indent: 30pt">There wasn’t anything left to say. Goodbye, maybe. I’ll see you soon. We’ll talk about it at some point. No, I don’t think that we’re going to be able to fix things. Amos was right. I was right for once.</p>
+<p style="text-indent: 30pt">“Know what?” I said, avoiding eye contact, “I am about done, in fact, I’m about four months past done, but I’m going to need some time to think things over. I can’t kick her out; she doesn’t have anywhere to go. I’ve got to spend some time away somewhere. I don’t know where yet, but it can’t be here. She has the note already.”</p>
+<p style="text-indent: 30pt">“About time. You don’t have an idea or anything yet?”</p>
+<p style="text-indent: 30pt">“A motel, probably. It doesn’t matter much.”</p>
+<p style="text-indent: 30pt">“Meg won’t try to call you?”</p>
+<p style="text-indent: 30pt">“Not after reading the note. No, I don’t think so.”</p>
+<p style="text-indent: 30pt">“You can be sure I’m not telling her anything.”</p>
+<p style="text-indent: 30pt">“I know.”</p>
+<br>
+<br>
+<br>
+<p style="text-indent: 30pt">The next morning was brighter. Sunlight shone blindingly on the snow and the sky was a blazing color; a shade of blue almost too vibrant to look at. It was still cold, but not so harsh as the night before. Everything was stiller now.</p>
+<p style="text-indent: 30pt">Turning from the window, I put the last of my belongings into the rucksack and zipped it.</p>
+<p style="text-indent: 30pt">“When are you heading out?” Amos said as he entered from the kitchenette.</p>
+<p style="text-indent: 30pt">“I need to pick up a few things from the store down the street, then I’ll be about ready.”</p>
+<p style="text-indent: 30pt">“Sure you don’t need a ride?”</p>
+<p style="text-indent: 30pt">“The car’s got a full tank. I’ll be fine.”</p>
+<p style="text-indent: 30pt">Amos nodded, then glanced at me before going back into the kitchen.</p>
+<p style="text-indent: 30pt">“I’ll call you when I get there.”</p>
+<p style="text-indent: 30pt">“Yep. If you need anything, call anytime. You know I don’t have a whole lot going on.”</p>
+<p style="text-indent: 30pt">“I will,” I said turning back toward the window, “I think I’m going to be alright.”</p>
+<p style="text-indent: 30pt">“Hang in there.”</p>
+<p style="text-indent: 30pt">“Thanks, Amos. Couldn’t have done it without you.”</p>
+<p style="text-indent: 30pt">At this, he grinned. A grin was reassuring.</p>
+<p style="text-indent: 30pt">“Anytime, Simon.”</p>
+<p style="text-indent: 30pt">With a parting wave, I left Amos’ apartment and headed down the steps to my car.</p>
+<br>
+<br>
+<br>
+<p style="text-indent: 30pt">Driving away from the city is a dream-like, distant experience. I watched through my mirror as the layers of gray office buildings and apartments faded away into sloping, ashen hills in the distance. Soon they became nothing but trees and a long road ahead of me. Then, nothing but blank sky, a trailing ribbon with evergreens dotted evermore thickly along its sides. As though all of what I knew had become nothing in a matter of minutes, or hours, perhaps. It was difficult to tell. The sun shone even more brightly in the light of the late morning, scattering rivers of light from the bare branches that hung above the road. The land sloped, the forest around was dense, but there was light ahead and it touched everything. At once, the morning was everywhere and always, glowing on the snow, on the trees, and in the sky. Everything was cold and bright and new. Grinning, I opened my window and felt a burst of air wash over me. A grin was always reassuring.</p>
+</span>
+</div>
+</header>
+<div class="page-content" itemprop="articleBody">
+<p style="text-indent: 30pt"><em>The bleakest skies are not those of winter</em>. That sentence, a mere phrase,  was the result of three years. Each day, all three years, spent on eight unchanged words. Hell, I wasn’t even sure I knew what I meant by it. The sentence just seemed to come to me one day and I had never felt more compelled to write something.  Meg had always said that writing was a pointless venture. Apparently, she was right.</p>
+<p style="text-indent: 30pt">I paused for a moment and let the cursor blink. Then, as I had done so many times before, got up from my desk and headed out through the living room to the back door. <em>The bleakest skies are not those of winter.</em> A damned blatant lie. Looking outside, I could see that the sky was in fact undeniably bleak today (the bleakest I had ever seen it), along with the rest of the winter-worn, half-derelict, Midwestern landscape. I saw as well that the ice of early February had killed the snowdrops that were starting to come up in the lot next door and stared at them for a minute.</p>
+<p style="text-indent: 30pt">All three years. What did it matter anyway? The novel wasn’t ever going to be written in the first place. I’d never meant to write it and yet I was still waiting and trying to write. Undoubtedly, I never would.</p>
+<p style="text-indent: 30pt">A gust of wind caught my attention. It was 10 A.M., making today the eighth day of my sabbatical, or, alternatively, the eighth day that I had risen, lacking  any ambition, and crept to the back patio to smoke after Meg had left and I had canned at least seven drafts. She never liked it when I smoked because by her observation it made me irritable and tired. This was something that I could not dispute. It became a daily ritual for me, nonetheless.</p>
+<p style="text-indent: 30pt">From my back pocket, I pulled out a half-empty pack that I had been working on over the past two days. The abraded texture of the box relieved my shaking. I took out my Clipper and lit one of the cigarettes, then stayed outside and smoked the rest of the pack. I went back inside again at noon but didn’t try to write again until later on.</p>
+<p style="text-indent: 30pt">Sometime after four o’clock, Amos, our neighbor in the apartment above, stopped by for coffee and a cigarette or two as he did most days. Amos, whose appearance rendered a deep weariness, was short but exceptionally wiry for his age. His salient features, though, were his pale, slate-colored eyes that reminded me of an overcast daybreak in November. It was the eyes that always spoke to me. He was 57 years old, employed as a part-time janitor, and a veteran of no more than six failed marriages and engagements. In all, he was a fine man to talk with. He never said much about himself, but instead listened and gave whatever forthright advice he could offer.</p>
+<p style="text-indent: 30pt">We sat on the back porch in the lawn chairs and watched the evening snow and listened to the accompanying sound of cars on the highway nearby. It was cold, but not unbearable.</p>
+<p style="text-indent: 30pt">After pouring him a cup of coffee and lighting another cigarette, I said what I had always said.</p>
+<p style="text-indent: 30pt">“It’s the first sentence. The first damned sentence, Amos. I don’t know what else to say. I’ve been sitting here for the past three years writing reviews and trying to make a good story when I can. I know what I want to write down, what I want to have, but I can’t figure out just how to say it. I’ve tried, and I really have tried, you know? I don’t know what happened and I’m tired of writing bullshit.”</p>
+<p style="text-indent: 30pt">Amos sipped his coffee and looked out toward the road.</p>
+<p style="text-indent: 30pt">“I don’t know what to tell you this time. I’ve never tried writing anything real before in my life and I guess I don’t know what I would do if I were you either. Sometimes you just have to wait until something good comes to you.”</p>
+<p style="text-indent: 30pt">“Well, shit. Guess that solves my problems then.”</p>
+<p style="text-indent: 30pt">We both chuckled and didn’t say anything else for a while thereafter. This wasn’t uncommon when we talked. It was a tacit principle of our association that some things were better left unanswered.</p>
+<p style="text-indent: 30pt">We continued to listen to the highway, finished a pot of coffee and most of another pack, and went inside. The snow had picked up and all but the incandescent porch light was invisible then.</p>
+<p style="text-indent: 30pt">Meg came home at 8:04 and promptly asked that Amos leave for the night. Amos left, thus leaving Meg and I standing alone together, face to face, in our front room.</p>
+<p style="text-indent: 30pt">Meg looked at me, walked to the counter, and with an almost inaudible sigh, placed down her coat and bag. I was not a stranger to these dangerously tired sighs of hers. She looked up at me and was silent for a moment.</p>
+<p style="text-indent: 30pt">“Simon, really? You know I can’t stand Amos spending all of his time at our apartment and you know I can’t stand it when you sit around here smoking all day, especially during the week,” Her tone turned colder and angrier, as did the condition of the weather outside.</p>
+<p style="text-indent: 30pt">”Can I come home for one goddamned day and not be disappointed? One goddamned day? Is this what it’s going to be like? What’s happened to you? I can’t understand why on Earth you’d rather sit around and smoke all day, killing yourself, wallowing in self-pity about your writing with a 60-year-old janitor, for Christ’s sake, instead of doing your damned job. What have I told you? Why can’t you get it through your head, Simon? You’re not trying, and I’m trying, but goddamnit, Simon, you’re not! You’ve been a terrible boyfriend recently and you’re never going to get published because you never-”</p>
+<p style="text-indent: 30pt">At this point I had stopped listening as Meg continued to yell until she struck me across the face, bringing my attention back to her. My lower lip stung momentarily and began bleeding.</p>
+<p style="text-indent: 30pt">I couldn’t blame her, really. I never could. She had a rough job and a burdened mind and an ineffective way of coping with them. Excessive drinking, inevitably, numbed both her pain and her capacity for self-restraint. I couldn’t ever blame her, though, even through the screaming and the hitting and hot, maudlin tears that were being directed at me. I thought I loved her in a way that I could never seem to understand except that it hurt and I never asked why.</p>
+<p style="text-indent: 30pt">Then, swiftly, as imperceptibly as one falls asleep after remembering a dream and for reasons that I could not yet comprehend, I remembered the day my father died.</p>
+<br>
+<br>
+<br>
+<p style="text-indent: 30pt">I hardly remember the death of my father, though pieces of it seem to come back every so often. They come dimly and at times when I find myself least likely to have thought of them at all. Perhaps such an event might stand out among a person’s memories, but by some manner of unconscious suppression or alteration I struggle to recollect more than broken-up scenes and nearly-familiar feelings. Regardless, as a droplet of blood ran from my lip and down my chin (Meg maintained long, well-manicured nails, you see), I thought of him.</p>
+<p style="text-indent: 30pt">He had died of alcohol poisoning after drinking two bottles of whiskey in quick succession. I was not aware of this until the hours after, however, when I came home from school in the evening and found him at the kitchen table. My mother, arriving home shortly after me, called an ambulance and followed it to the hospital without so much as a word to me. I never saw him again, excepting the brief funeral she convened at the local chapel.</p>
+<p style="text-indent: 30pt">Indisputably, things change when someone dies. I mean this particularly in the sense that after a while, the expectation of life as you knew it goes away and you accept the fact that a death has happened and that you will never be able to do anything about it but move on. Of course, this is precisely what happened to me in the circumstance of my father’s death. He was a good man, but rather absent at times, and I loved him despite this, and despite having known that he would die by his drunkenness eventually. Yet literal deaths are not the only circumstances in which such a change in expectation occurs. I suppose, alike to the way that I both anticipated and accepted my father’s death, that was, in most respects, how I felt about Meg.</p>
+<p style="text-indent: 30pt">See, I loved her because I needed her in a way. I needed her a lot. I do not leave myself blameless when I state that her worrying, along with the stress of her daily life, were factors that led her to be whom she was in the evenings. Nevertheless, and from the beginning, I felt that she would reach her breaking point, or two successive bottles, so to speak, before we would reach a mutual and seamless decline in our love for one another. Even then, I don’t know what I would have done without her, regardless of her strong apprehension toward my writing, for the past three years.
+<p style="text-indent: 30pt">My flashback ended and I sat down, still somewhat dazed, in the chair as Meg said nothing, turned, and went into the bedroom. Our apartment was silent except for the sound of the heater and a muffled television from the room next door.</p>
+<p style="text-indent: 30pt">Fifteen minutes passed before I entered the bedroom after her. I saw that she had fallen asleep without bothering to get under the comforter or take off her shoes and went back out to get her a blanket. Then, without much thought, I pulled out my rucksack from under the bed and packed for an indefinite amount of time away. I just needed some time. Any at all.</p>
+<p style="text-indent: 30pt">The apartment was noiseless now and Meg was deeply asleep. As quietly as I could, I retrieved my laptop, wrote a quick note on a pad of paper, exited and locked the apartment, then headed up the stairwell to find Amos.</p>
+<p style="text-indent: 30pt">Amos did not lock his door most nights. Any individuals who took to burglarizing him would first find themselves sorely disappointed by the sparse belongings inside and thereupon shot. Tonight, though, I thought to enter his apartment before knocking. I gathered that he would be expecting me at some point after Meg came home.</p>
+<p style="text-indent: 30pt">Amos’s apartment retained the strong, intermingled scents of tobacco and birch, as chain-smoking and wood carving were his primary occupations. This was difficult not to be reminded of whenever I opened his door, or when anyone did, for that matter. I stepped inside and turned to the living room to see Amos sitting on his couch and carving the figure of a bird. A barn swallow in flight, it seemed. His ability as a craftsman was truly impressive.</p>
+<p style="text-indent: 30pt">“How’d it go?”</p>
+<p style="text-indent: 30pt">“About as well as it usually does.”</p>
+<p style="text-indent: 30pt">“Not too bad this time?”</p>
+<p style="text-indent: 30pt">“Well, I am here.”</p>
+<p style="text-indent: 30pt">“Yep. You need a place to sleep, right? The couch is all yours, if you want it.”</p>
+<p style="text-indent: 30pt">“Much obliged.”</p>
+<p style="text-indent: 30pt">“Give me a second and I’ll take care of the wood shavings.”
+Amos swept his work off of the couch and produced a large wool blanket from a chest nearby.</p>
+<p style="text-indent: 30pt">“This should work for you.”</p>
+<p style="text-indent: 30pt">“It’s just fine for tonight. Thanks again for letting me stay.”</p>
+<p style="text-indent: 30pt">“Don’t worry about it; you’re good company anyway. Want some coffee? I just put a pot on.”</p>
+<p style="text-indent: 30pt">“I’ll take a cup, if you don’t mind.”</p>
+<p style="text-indent: 30pt">“You bet.”</p>
+<p style="text-indent: 30pt">Amos’ apartment had one bedroom, one bathroom, a modest kitchenette, and a room just wide enough to be considered a living area. As a result, it was easy to find oneself feeling all too close to one’s fellow inhabitant while inside. I didn't have the option of sleeping somewhere else, small though the place was. About a minute later, Amos reentered the room carrying two cups of coffee.</p>
+<p style="text-indent: 30pt">“It looks like the weather’s as good as it’ll get tonight. How about the balcony?”</p>
+<p style="text-indent: 30pt">Amos handed me a cup of coffee.</p>
+<p style="text-indent: 30pt">“Why not?”</p>
+<p style="text-indent: 30pt">We put on our coats and took the pot of coffee out onto the balcony. The air was motionless and the world seemed immersed in a restless sleep: a few cars moved by on the highway and lights from the city would flicker every so often. I looked out over the railing, past the city, and to the horizon. Funny how fast Prussian blue becomes black in the winter. It’s cold and things just seem to slip by too subtly to notice.</p>
+<p style="text-indent: 30pt">“You want to talk about it?”</p>
+<p style="text-indent: 30pt">“Not really. Not this time. I’d say it’s about done.”</p>
+<p style="text-indent: 30pt">“Was it that bad?”</p>
+<p style="text-indent: 30pt">“Not the worst, actually. I’m just tired of it, that’s all.”</p>
+<p style="text-indent: 30pt">“Have any idea what you’re doing next?”</p>
+<p style="text-indent: 30pt">“Shit, I don’t have any idea what I’m doing now.”</p>
+<p style="text-indent: 30pt">“It’s your apartment, isn’t it? If you’re done putting up with the fits, just tell her she’s got a couple days to get her stuff and go. You can’t keep it up: either that woman’s going to kill you with her yelling, or you’re gonna kill yourself by dealing with it forever. It’s up to you, but I’d get the hell out of there. You knew it was gonna happen sometime.”</p>
+<p style="text-indent: 30pt">“She’s dealing with a lot, Amos.”</p>
+<p style="text-indent: 30pt">“So are you, pal.”</p>
+<p style="text-indent: 30pt">“So what?”</p>
+<p style="text-indent: 30pt">“So what? You get the hell out of there, that’s what. You’re wasting your time and you know it. Simon, there’s a point when you need to stop putting up with something and wasting your life, and that’s right now.”</p>
+<p style="text-indent: 30pt">There wasn’t anything left to say. Goodbye, maybe. I’ll see you soon. We’ll talk about it at some point. No, I don’t think that we’re going to be able to fix things. Amos was right. I was right for once.</p>
+<p style="text-indent: 30pt">“Know what?” I said, avoiding eye contact, “I am about done, in fact, I’m about four months past done, but I’m going to need some time to think things over. I can’t kick her out; she doesn’t have anywhere to go. I’ve got to spend some time away somewhere. I don’t know where yet, but it can’t be here. She has the note already.”</p>
+<p style="text-indent: 30pt">“About time. You don’t have an idea or anything yet?”</p>
+<p style="text-indent: 30pt">“A motel, probably. It doesn’t matter much.”</p>
+<p style="text-indent: 30pt">“Meg won’t try to call you?”</p>
+<p style="text-indent: 30pt">“Not after reading the note. No, I don’t think so.”</p>
+<p style="text-indent: 30pt">“You can be sure I’m not telling her anything.”</p>
+<p style="text-indent: 30pt">“I know.”</p>
+<br>
+<br>
+<br>
+<p style="text-indent: 30pt">The next morning was brighter. Sunlight shone blindingly on the snow and the sky was a blazing color; a shade of blue almost too vibrant to look at. It was still cold, but not so harsh as the night before. Everything was stiller now.</p>
+<p style="text-indent: 30pt">Turning from the window, I put the last of my belongings into the rucksack and zipped it.</p>
+<p style="text-indent: 30pt">“When are you heading out?” Amos said as he entered from the kitchenette.</p>
+<p style="text-indent: 30pt">“I need to pick up a few things from the store down the street, then I’ll be about ready.”</p>
+<p style="text-indent: 30pt">“Sure you don’t need a ride?”</p>
+<p style="text-indent: 30pt">“The car’s got a full tank. I’ll be fine.”</p>
+<p style="text-indent: 30pt">Amos nodded, then glanced at me before going back into the kitchen.</p>
+<p style="text-indent: 30pt">“I’ll call you when I get there.”</p>
+<p style="text-indent: 30pt">“Yep. If you need anything, call anytime. You know I don’t have a whole lot going on.”</p>
+<p style="text-indent: 30pt">“I will,” I said turning back toward the window, “I think I’m going to be alright.”</p>
+<p style="text-indent: 30pt">“Hang in there.”</p>
+<p style="text-indent: 30pt">“Thanks, Amos. Couldn’t have done it without you.”</p>
+<p style="text-indent: 30pt">At this, he grinned. A grin was reassuring.</p>
+<p style="text-indent: 30pt">“Anytime, Simon.”</p>
+<p style="text-indent: 30pt">With a parting wave, I left Amos’ apartment and headed down the steps to my car.</p>
+<br>
+<br>
+<br>
+<p style="text-indent: 30pt">Driving away from the city is a dream-like, distant experience. I watched through my mirror as the layers of gray office buildings and apartments faded away into sloping, ashen hills in the distance. Soon they became nothing but trees and a long road ahead of me. Then, nothing but blank sky, a trailing ribbon with evergreens dotted evermore thickly along its sides. As though all of what I knew had become nothing in a matter of minutes, or hours, perhaps. It was difficult to tell. The sun shone even more brightly in the light of the late morning, scattering rivers of light from the bare branches that hung above the road. The land sloped, the forest around was dense, but there was light ahead and it touched everything. At once, the morning was everywhere and always, glowing on the snow, on the trees, and in the sky. Everything was cold and bright and new. Grinning, I opened my window and felt a burst of air wash over me. A grin was always reassuring.</p>
+</div>
+</article>
+</main>
+<footer class="footer">
+<a class="footer_item" href="https://Dirout.github.io/blog/feed.xml">rss</a>
+<span class="footer_item">&copy; 2021 Emil Sayahi & Evan Gabriel Burke</span>
+<small class="footer_copyright">
+<a
+href="https://github.com/dirout/blog"
+target="_blank"
+rel="noreferrer noopener"
+>Mousehole</a
+>
+</small>
+</footer>
+<script src="https://Dirout.github.io/blog/assets/js/main.js" defer="defer"></script>
+</div>
+</body>
+</html>
