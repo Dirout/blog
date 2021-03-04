@@ -6,7 +6,7 @@ image: /assets/img/ogp.png
 repo: https://github.com/Dirout/blog
 mode: dark
 tags:
-  - "testing"
+  - "short story"
 menus:
   - title: home
     url: https://Dirout.github.io/blog/
