@@ -3,4 +3,5 @@ title: Oops!
 layout: "404"
 permalink: "/404.html"
 author: both
+markdown: false
 ---

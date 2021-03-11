@@ -17,12 +17,12 @@ author: both
 {%- capture name -%}{{ tag | first }}{%- endcapture -%}
 <h2 id="{{ name }}">{{ name | upcase }}</h2>
 {%- for post in collections["posts"] -%}
-{% if post.document.frontmatter.tags %}
-{% if post.document.frontmatter.tags contains tag %}
+{% if post.data.tags %}
+{% if post.data.tags contains tag %}
 <article class="post-item" id="results-container">
-<span class="post-item-date">{{ post.i_day }} {{ post.long_month }} {{ post.year }}</span>
+<span class="post-item-date">{{ post.date.i_day }} {{ post.date.long_month }} {{ post.date.year }}</span>
 <h3 class="post-item-title">
-<a href="{{ post.url | prepend: global.url }}">{{ post.document.frontmatter.title | escape }}</a>
+<a href="{{ post.url | prepend: global.url }}">{{ post.data.title | escape }}</a>
 </h3>
 </article>
 {% endif %}

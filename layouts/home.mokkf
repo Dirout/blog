@@ -2,14 +2,14 @@
 layout: default
 home: true
 author: both
+markdown: false
 ---
-
 <h3 class="posts-item-note" aria-label="Posts">Posts</h3>
 {%- for post in collections["posts"] -%}
 <article class="post-item">
-<span class="post-item-date">{{ post.i_day }} {{ post.long_month }} {{ post.year }}</span>
-<h4 class="post-item-title">
-<a href="{{ post.url | prepend: global.url }}">{{ post.document.frontmatter.title | escape }}</a>
-</h4>
+    <span class="post-item-date">{{ post.date.i_day }} {{ post.date.long_month }} {{ post.date.year }}</span>
+    <h4 class="post-item-title">
+        <a href="{{ post.url | prepend: global.url }}">{{ post.data.title | escape }}</a>
+    </h4>
 </article>
 {%- endfor -%}

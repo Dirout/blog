@@ -1,82 +1,76 @@
+---
+markdown: false
+---
 <!DOCTYPE html>
 <html lang="en">
+    {% include header.html %}
 
-{% include header.html %}
+    <body data-theme="{{ global.mode }}" class="notransition">
+        <script>
+            const body = document.body;
+            const data = body.getAttribute("data-theme");
 
-<body data-theme="{{ global.mode }}" class="notransition">
+            const initTheme = (state) => {
+                if (state === "dark") {
+                    body.setAttribute("data-theme", "dark");
+                } else if (state === "light") {
+                    body.removeAttribute("data-theme");
+                } else {
+                    localStorage.setItem("theme", data);
+                }
+            };
 
-<script>
-  const body = document.body;
-  const data = body.getAttribute("data-theme");
+            initTheme(localStorage.getItem("theme"));
 
-  const initTheme = (state) => {
-    if (state === "dark") {
-      body.setAttribute("data-theme", "dark");
-    } else if (state === "light") {
-      body.removeAttribute("data-theme");
-    } else {
-      localStorage.setItem("theme", data);
-    }
-  };
+            setTimeout(() => body.classList.remove("notransition"), 75);
+        </script>
 
-  initTheme(localStorage.getItem("theme"));
+        {% include navbar.html %}
+        <div class="wrapper post">
+            <main class="page-content" aria-label="Content">
+                <article itemscope itemtype="https://schema.org/BlogPosting">
+                    <header class="header">
+                        {% if page.data.tags and page.data.tags != empty %}
+                        <div class="tags">
+                            {% assign tags = page.data.tags %}
+                            <span itemprop="keywords">
+                                {% for tag in tags %}
+                                <a class="tag" href="{{ global.url }}/tags.html#{{tag | downcase | slugify}}">{{tag | upcase }}</a>{% unless forloop.last %},{% endunless %} {% endfor %}
+                            </span>
+                        </div>
+                        {% endif %}
+                        <h1 class="header-title" itemprop="headline">{{ page.data.title | escape }}</h1>
+                        {% if page.date %}
+                        <div class="post-meta">
+                            <time datetime="{{ page.date.rfc_3339 }}" itemprop="datePublished">
+                                {{ page.date.i_day }} {{ page.date.long_month }} {{ page.date.year }}
+                            </time>
+                            <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+                                <span itemprop="name">{{ global.authors[page.data.author].name }}</span>
+                            </span>
+                            {% if page.data.modified %}
+                            <time hidden datetime="{{ page.data.modified }}" itemprop="dateModified">
+                                {{ page.date.i_day }} {{ page.date.long_month }} {{ page.date.year }}
+                            </time>
+                            {% endif %}
+                            <span hidden itemprop="publisher" itemtype="Person">{{ global.authors[page.data.author].name }}</span>
+                            {% if page.data.image %}
+                            <span hidden itemprop="image">{{ page.data.image }}</span>
+                            {% endif %}
+                            <span hidden itemprop="mainEntityOfPage">{{ page.content }}</span>
+                        </div>
+                        {% endif %}
+                    </header>
 
-  setTimeout(() => body.classList.remove("notransition"), 75);
-</script>
+                    <div class="page-content" itemprop="articleBody">
+                        {{ page.content }}
+                    </div>
+                </article>
+            </main>
 
-{% include navbar.html %}
-<div class="wrapper post">
-<main class="page-content" aria-label="Content">
-<article itemscope itemtype="https://schema.org/BlogPosting">
-
-<header class="header">
-{% if page.document.frontmatter.tags and page.document.frontmatter.tags != empty %}
-<div class="tags">
-{% assign tags = page.document.frontmatter.tags %}
-<span itemprop="keywords">
-{% for tag in tags %}
-<a class="tag"
-href="{{ global.url }}/tags.html#{{tag | downcase | slugify}}">{{tag | upcase }}</a>{% unless forloop.last %},{% endunless %}
-{% endfor %}
-</span>
-</div>
-{% endif %}
-<h1 class="header-title" itemprop="headline">{{ page.document.frontmatter.title | escape }}</h1>
-{% if page.document.date %}
-<div class="post-meta">
-<time datetime="{{ page.document.date }}" itemprop="datePublished">
-{{ page.i_day }} {{ page.long_month }} {{ page.year }}
-</time>
-<span itemprop="author" itemscope itemtype="https://schema.org/Person">
-<span itemprop="name">{{ global.authors[page.document.frontmatter.author].name }}</span>
-</span>
-{% if page.document.frontmatter.modified %}
-<time hidden datetime="{{ page.document.frontmatter.modified }}" itemprop="dateModified">
-{{ page.i_day }} {{ page.long_month }} {{ page.year }}
-</time>
-{% endif %}
-<span hidden itemprop="publisher" itemtype="Person">{{ global.authors[page.document.frontmatter.author].name }}</span>
-{% if page.document.frontmatter.image %}
-<span hidden itemprop="image">{{ page.document.frontmatter.image }}</span>
-{% endif %}
-<span hidden itemprop="mainEntityOfPage">{{ page.document.content }}</span>
-</div>
-{% endif %}
-</header>
-
-<div class="page-content" itemprop="articleBody">
-{{ page.document.content }}
-</div>
-</article>
-
-</main>
-
-{% if page.document.frontmatter.modified %}
-<small class="post-updated-at">Updated {{ page.document.frontmatter.modified | date: "%d-%m-%Y" }}</small>
-{% endif %}
-
-{% include footer.html %}
-</div>
-</body>
-
+            {% if page.data.modified %}
+            <small class="post-updated-at">Updated {{ page.data.modified | date: "%d-%m-%Y" }}</small>
+            {% endif %} {% include footer.html %}
+        </div>
+    </body>
 </html>

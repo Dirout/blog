@@ -1,6 +1,7 @@
 ---
 permalink: "/feed.xml"
 ---
+
 <?xml version="1.0" encoding="utf-8"?>
 
 <feed xmlns="http://www.w3.org/2005/Atom">
@@ -12,14 +13,15 @@ permalink: "/feed.xml"
 {% for post in collections["posts"] %}
 <entry>
 <author>
-<name>{{ global.authors[post.document.frontmatter.author].name }}</name>
-<email>{{ global.authors[post.document.frontmatter.author].email }}</email>
+<name>{{ global.authors[post.data.author].name }}</name>
+<email>{{ global.authors[post.data.author].email }}</email>
 </author>
-<title>{{ post.document.frontmatter.title }}</title>
+<title>{{ post.data.title }}</title>
 <link href="{{ global.url }}{{ post.url }}"/>
-<updated>{{ post.document.date }}</updated>
+<pubdate>{{ post.date.rfc_2822 }}</pubdate>
+<updated>{{ post.date.rfc_2822 }}</updated>
 <id>{{ global.url }}{{ post.url }}</id>
-<content type="html">{{ post.document.content | escape }}</content>
+<content type="html">{{ post.content | escape }}</content>
 </entry>
 {% endfor %}
 </feed>
