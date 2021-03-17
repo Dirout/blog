@@ -7,6 +7,7 @@ repo: https://github.com/Dirout/blog
 mode: dark
 tags:
   - "short story"
+  - "draft"
 menus:
   - title: home
     url: https://Dirout.github.io/blog/

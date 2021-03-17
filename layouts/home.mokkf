@@ -5,7 +5,8 @@ author: both
 markdown: false
 ---
 <h3 class="posts-item-note" aria-label="Posts">Posts</h3>
-{%- for post in collections["posts"] -%}
+{% assign posts_by_date = collections["posts"] | sort: "url" %}
+{%- for post in posts_by_date reversed -%}
 {% unless post.data.tags contains "draft" %}
 <article class="post-item">
     <span class="post-item-date">{{ post.date.i_day }} {{ post.date.long_month }} {{ post.date.year }}</span>

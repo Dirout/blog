@@ -19,7 +19,7 @@ var galite = galite || {};
 galite.UA = "{{ global.google_analytics }}";
 </script>
 {%- endif -%}
-{%- if page.url == '/archive/' -%}
+{%- if page.permalink == '/archive.html' -%}
 <script src="{{ global.url }}/assets/js/search.min.js"></script>
 <script>
     var sjs = SimpleJekyllSearch({

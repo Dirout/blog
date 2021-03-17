@@ -3,29 +3,36 @@ title: Tags
 permalink: "/tags.html"
 layout: page
 author: both
+markdown: false
 ---
 
 <div class="archive-tags">
-<a class="tag-item" href="#">all</a>
-{%- for tag in global.tags -%}
-{% capture name %}{{ tag | first }}{% endcapture %}
-<a class="tag-item" href="#{{name}}">{{ name }}</a>
-{%- endfor -%}
+  <a class="tag-item" href="#">all</a>
+  {% assign tags = global.tags | sort_natural %}
+  {%- for tag in tags -%}
+    {% capture name %}{{ tag | first }}{% endcapture %}
+
+  <a class="tag-item" href="#{{name}}">{{ name }}</a>
+  {%- endfor -%}
+
 </div>
 
-{%- for tag in global.tags -%}
-{%- capture name -%}{{ tag | first }}{%- endcapture -%}
+{%- for tag in tags -%}
+  {%- capture name -%}{{ tag | first }}{%- endcapture -%}
+
 <h2 id="{{ name }}">{{ name | upcase }}</h2>
-{%- for post in collections["posts"] -%}
-{% if post.data.tags %}
-{% if post.data.tags contains tag %}
+  {% assign posts_by_date = collections["posts"] | sort: "url" %}
+  {%- for post in posts_by_date reversed -%}
+    {% if post.data.tags %}
+      {% if post.data.tags contains tag %}
+
 <article class="post-item" id="results-container">
-<span class="post-item-date">{{ post.date.i_day }} {{ post.date.long_month }} {{ post.date.year }}</span>
-<h3 class="post-item-title">
-<a href="{{ post.url | prepend: global.url }}">{{ post.data.title | escape }}</a>
-</h3>
+  <span class="post-item-date">{{ post.date.i_day }} {{ post.date.long_month }} {{ post.date.year }}</span>
+  <h3 class="post-item-title">
+    <a href="{{ post.url | prepend: global.url }}">{{ post.data.title | escape }}</a>
+  </h3>
 </article>
-{% endif %}
-{% endif %}
-{%- endfor -%}
+      {% endif %}
+    {% endif %}
+  {%- endfor -%}
 {%- endfor -%}

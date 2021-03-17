@@ -32,7 +32,7 @@ markdown: false
                     <header class="header">
                         {% if page.data.tags and page.data.tags != empty %}
                         <div class="tags">
-                            {% assign tags = page.data.tags %}
+                            {% assign tags = page.data.tags | sort_natural %}
                             <span itemprop="keywords">
                                 {% for tag in tags %}
                                 <a class="tag" href="{{ global.url }}/tags.html#{{tag | downcase | slugify}}">{{tag | upcase }}</a>{% unless forloop.last %},{% endunless %} {% endfor %}
