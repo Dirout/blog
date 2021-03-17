@@ -260,32 +260,37 @@ Archive - Mousehole
                 <h1 class="header-title center" itemprop="headline">Archive</h1>
             </header>
             <main class="page-content" aria-label="Content">
-                <div class="search-article">
-<label for="search-input" aria-hidden="true">
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(128,128,128,0.8)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-</label>
-<input type="search" id="search-input" placeholder="Find some articles here" aria-label="Search">
+                
+<div class="search-article">
+    <label for="search-input" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(128,128,128,0.8)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+    </label>
+    <input type="search" id="search-input" placeholder="Find some articles here" aria-label="Search" />
 </div>
+
 <ul id="search-results"></ul><h2>2021</h2><article class="post-item">
-<h3 class="post-item-title">
-<a href="https://Dirout.github.io/blog/posts/2021/03/13/A Crack in the Wall.html">[DRAFT] A Crack in the Wall</a>
-</h3>
-</article><h2>2019</h2><article class="post-item">
-<h3 class="post-item-title">
-<a href="https://Dirout.github.io/blog/posts/2019/07/01/A Perpetual Morning.html">A Perpetual Morning</a>
-</h3>
-</article><article class="post-item">
-<h3 class="post-item-title">
-<a href="https://Dirout.github.io/blog/posts/2019/07/01/Banks of the Ohio.html">Banks of the Ohio</a>
-</h3>
-</article><article class="post-item">
-<h3 class="post-item-title">
-<a href="https://Dirout.github.io/blog/posts/2019/07/01/John Brown's Body.html">John Brown&#39;s Body</a>
-</h3>
+    <h3 class="post-item-title">
+        <a href="https://Dirout.github.io/blog/posts/2021/03/13/A Crack in the Wall.html"><span class="post-updated-at post-meta">DRAFT</span> A Crack in the Wall</a>
+    </h3>
 </article><h2>2020</h2><article class="post-item">
-<h3 class="post-item-title">
-<a href="https://Dirout.github.io/blog/posts/2020/03/24/Tomorrow.html">Tomorrow</a>
-</h3>
+    <h3 class="post-item-title">
+        <a href="https://Dirout.github.io/blog/posts/2020/03/24/Tomorrow.html">Tomorrow</a>
+    </h3>
+</article><h2>2019</h2><article class="post-item">
+    <h3 class="post-item-title">
+        <a href="https://Dirout.github.io/blog/posts/2019/07/01/John Brown's Body.html">John Brown&#39;s Body</a>
+    </h3>
+</article><article class="post-item">
+    <h3 class="post-item-title">
+        <a href="https://Dirout.github.io/blog/posts/2019/07/01/Banks of the Ohio.html">Banks of the Ohio</a>
+    </h3>
+</article><article class="post-item">
+    <h3 class="post-item-title">
+        <a href="https://Dirout.github.io/blog/posts/2019/07/01/A Perpetual Morning.html">A Perpetual Morning</a>
+    </h3>
 </article>
             </main>
             <footer class="footer">
@@ -300,7 +305,14 @@ rel="noreferrer noopener"
 >
 </small>
 </footer>
-<script src="https://Dirout.github.io/blog/assets/js/main.js" defer="defer"></script>
+<script src="https://Dirout.github.io/blog/assets/js/main.js" defer="defer"></script><script src="https://Dirout.github.io/blog/assets/js/search.min.js"></script>
+<script>
+    var sjs = SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('search-results'),
+      json: 'https://Dirout.github.io/blog/assets/search.json',
+    });
+</script>
         </div>
     </body>
 </html>
