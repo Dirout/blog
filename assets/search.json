@@ -1,14 +1,24 @@
----
-layout: none
----
-
 [
-  {% for post in collections["posts"] %}
+  
     {
-      "title"    : "{{ post.document.frontmatter.title | escape }}",
-      "tags"     : "{{ post.document.frontmatter.tags | join: ', ' }}",
-      "url"      : "{{ global.baseurl }}{{ post.url }}",
-      "date"     : "{{ post.date }}"
-    } {% unless forloop.last %},{% endunless %}
-  {% endfor %}
+      "title"    : "A Crack in the Wall",
+      "tags"     : "draft, short story",
+      "url"      : "https://Dirout.github.io/blog/posts/2021/03/13/A Crack in the Wall.html",
+      "date"     : "2021-03-13T15:30:00+05:00"
+    } ,
+  
+    {
+      "title"    : "A Perpetual Morning",
+      "tags"     : "short story",
+      "url"      : "https://Dirout.github.io/blog/posts/2019/07/01/A Perpetual Morning.html",
+      "date"     : "2019-07-01T21:19:00+05:00"
+    } ,
+  
+    {
+      "title"    : "Banks of the Ohio",
+      "tags"     : "short story",
+      "url"      : "https://Dirout.github.io/blog/posts/2019/07/01/Banks of the Ohio.html",
+      "date"     : "2019-07-01T21:19:00+05:00"
+    } 
+  
 ]
