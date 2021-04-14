@@ -12,6 +12,8 @@ collections:
     folder: "posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "mokkf"
+    format: "yaml-frontmatter"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Collection", name: "collection", widget: "hidden", default: "posts"}
@@ -27,6 +29,8 @@ collections:
     folder: "pages"
     create: true
     slug: "{{slug}}"
+    extension: "mokkf"
+    format: "yaml-frontmatter"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
       - {label: "Collection", name: "collection", widget: "hidden", default: "pages"}
