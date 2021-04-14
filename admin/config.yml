@@ -18,7 +18,7 @@ collections:
       - {label: "Permalink", name: "permalink", widget: "hidden", default: "date"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Author", name: "author", widget: "select", options: ["em", "evan", "both"]}
-      - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: "THH:mm:ss+00:00", format: "YYYY-MM-DDTHH:mm:ss+00:00", picker_utc: "false"}
+      - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: "THH:mm:ss+00:00", format: "YYYY-MM-DDTHH:mm:ss+00:00", picker_utc: true}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Markdown", name: "markdown", widget: "boolean", default: "true"}
       - {label: "Body", name: "body", widget: "markdown"}
