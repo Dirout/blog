@@ -1,0 +1,37 @@
+backend:
+  name: github
+  repo: Dirout/blog
+  branch: master
+publish_mode: editorial_workflow
+media_folder: "assets/img/uploads"
+site_url: https://dirout.github.io/blog
+logo_url: https://dirout.github.io/assets/icons/vector/logo.svg
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Collection", name: "collection", widget: "hidden", default: "posts"}
+      - {label: "Permalink", name: "permalink", widget: "hidden", default: "date"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Author", name: "author", widget: "select", options: ["em", "evan", "both"]}
+      - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: "THH:mm:ss+00:00", format: "YYYY-MM-DDTHH:mm:ss+00:00", picker_utc: "false"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Markdown", name: "markdown", widget: "boolean", default: "true"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "pages"
+    label: "Pages"
+    folder: "pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
+      - {label: "Collection", name: "collection", widget: "hidden", default: "pages"}
+      - {label: "Permalink", name: "permalink", widget: "string", default: "{{ page.name }}.html"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Author", name: "author", widget: "select", options: ["em", "evan", "both"]}
+      - {label: "Markdown", name: "markdown", widget: "boolean", default: "true"}
+      - {label: "Body", name: "body", widget: "markdown"}
