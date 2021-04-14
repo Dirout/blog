@@ -12,6 +12,7 @@ collections:
     folder: "posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: posts/{{year}}/{{month}}/{{day}}/{{title}}.html
     extension: "mokkf"
     format: "yaml-frontmatter"
     fields:
@@ -29,12 +30,13 @@ collections:
     folder: "pages"
     create: true
     slug: "{{slug}}"
+    preview_path: pages/{{title}}.html
     extension: "mokkf"
     format: "yaml-frontmatter"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "page"}
       - {label: "Collection", name: "collection", widget: "hidden", default: "pages"}
-      - {label: "Permalink", name: "permalink", widget: "string", default: "{{ page.name }}.html"}
+      - {label: "Permalink", name: "permalink", widget: "hidden", default: "none"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Author", name: "author", widget: "select", options: ["em", "evan", "both"]}
       - {label: "Markdown", name: "markdown", widget: "boolean", default: "true"}

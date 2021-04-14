@@ -6,7 +6,10 @@ markdown: false
 
 <!doctype html>
 <html>
+{% capture header %}
 {% include header.html %}
+{% endcapture %}
+{{ header | replace: '<link rel="stylesheet" href="https://Dirout.github.io/blog/assets/css/style.css" />', '' }}
 <body>
   <script src="https://unpkg.com/netlify-cms/dist/netlify-cms.js"></script>
 </body>

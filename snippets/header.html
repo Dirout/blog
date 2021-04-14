@@ -1,50 +1,49 @@
 <head prefix="og: http://ogp.me/ns#">
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="application-name" content="{{ global.title }}" />
-<meta name="apple-mobile-web-app-status-bar-style" content="#fff" />
-<meta name="apple-mobile-web-app-title" content="{{ global.title }}" />
-<title>
-{% if page.data.title %}{{ page.data.title | escape }} - {{ global.title }}{% else %}{{ global.title | escape }}{% endif %}
-</title>
-<link rel="alternate" href="{{ page.url | remove: 'index.html' | remove: '.html' | prepend: global.url }}" hreflang="en" />
-<link rel="canonical" href="{{ page.url  | remove: 'index.html' | remove: '.html' | prepend: global.url }}" />
-<meta name="description" {% if page.data.description %} content="{{ page.data.description | strip_html | truncate: 200 | escape }}" {% else %} content="{{ global.description | strip_html | truncate: 200 | escape }}" {% endif %} />
-<meta name="referrer" content="no-referrer-when-downgrade" />
-<meta property="og:site_name" content="{% if page.data.title %}{{ page.data.title | escape }}{% if page.data.author %} | {{ global.authors[page.data.author].name }}{% endif %} {% else %} {{ global.title | escape }} {% endif %}" />
-<meta property="og:title" content="{% if page.data.title %}{{ page.data.title | escape }}{% if page.data.author %} | {{ global.authors[page.data.author].name }}{% endif %}{% else %}{{ global.title | escape }}{% endif %}" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="{{ page.url | remove: 'index.html' | remove: '.html' | prepend: global.url }}" />
-<meta property="og:description" {% if page.data.description %} content="{{ page.data.description | strip_html | truncate: 200 | escape }}" {% else %} content="{{ global.description | strip_html | truncate: 200 | escape }}" {% endif %} />
-{% if page.data.image %}
-<meta property="og:image" content="{{ page.data.image | prepend: global.url }}" />
-{% else %}
-<meta property="og:image" content="{{ global.image | prepend: global.url }}" />
-{% endif %}
-<meta property="og:image:width" content="640" />
-<meta property="og:image:height" content="640" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="{% if page.data.title %}{{ page.data.title | escape }}{% if page.data.author %} | {{ global.authors[page.data.author].name }}{% endif %}{% else %}{{ global.title | escape }}{% endif %}" />
-<meta name="twitter:url" content="{{ page.url  | remove: 'index.html' | remove: '.html' | prepend: global.url }}" />
-<meta name="twitter:site" content="{{ global.title }}" />
-<meta name="twitter:creator" content="{% if page.data.author %}{{ global.authors[page.data.author].name }}{% else %}{{ global.title }}{% endif %}" />
-<meta name="twitter:description"{% if page.data.description %} content="{{ page.data.description | strip_html | truncate: 200 | escape }}" {% else %} content="{{ global.description | strip_html | truncate: 200 | escape }}" {% endif %} />
-{% if page.data.image %}
-<meta name="twitter:image" content="{{ page.data.image | prepend: global.url }}" />
-{% else %}
-<meta name="twitter:image" content="{{ global.image | prepend: global.url }}" />
-{% endif %}
-<link rel="apple-touch-icon" sizes="180x180" href="{{ global.url }}/assets/favicons/apple-touch-icon.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="{{ global.url }}/assets/favicons/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="{{ global.url }}/assets/favicons/favicon-16x16.png" />
-<link rel="mask-icon" href="{{ global.url }}/assets/favicons/safari-pinned-tab.svg" color="#5bbad5" />
-<meta name="apple-mobile-web-app-title" content="{{ global.title }}" />
-<meta name="application-name" content="{{ global.title }}" />
-<meta name="msapplication-TileColor" content="#da532c" />
-<meta name="theme-color" content="#2c2c2c" />
-
-<link rel="stylesheet" href="{{ global.url }}/assets/css/style.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="{{ global.title }}" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="#fff" />
+  <meta name="apple-mobile-web-app-title" content="{{ global.title }}" />
+  <title>
+  {% if page.data.title %}{{ page.data.title | escape }} - {{ global.title }}{% else %}{{ global.title | escape }}{% endif %}
+  </title>
+  <link rel="alternate" href="{{ page.url | remove: 'index.html' | remove: '.html' | prepend: global.url }}" hreflang="en" />
+  <link rel="canonical" href="{{ page.url  | remove: 'index.html' | remove: '.html' | prepend: global.url }}" />
+  <meta name="description" {% if page.data.description %} content="{{ page.data.description | strip_html | truncate: 200 | escape }}" {% else %} content="{{ global.description | strip_html | truncate: 200 | escape }}" {% endif %} />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+  <meta property="og:site_name" content="{% if page.data.title %}{{ page.data.title | escape }}{% if page.data.author %} | {{ global.authors[page.data.author].name }}{% endif %} {% else %} {{ global.title | escape }} {% endif %}" />
+  <meta property="og:title" content="{% if page.data.title %}{{ page.data.title | escape }}{% if page.data.author %} | {{ global.authors[page.data.author].name }}{% endif %}{% else %}{{ global.title | escape }}{% endif %}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ page.url | remove: 'index.html' | remove: '.html' | prepend: global.url }}" />
+  <meta property="og:description" {% if page.data.description %} content="{{ page.data.description | strip_html | truncate: 200 | escape }}" {% else %} content="{{ global.description | strip_html | truncate: 200 | escape }}" {% endif %} />
+  {% if page.data.image %}
+  <meta property="og:image" content="{{ page.data.image | prepend: global.url }}" />
+  {% else %}
+  <meta property="og:image" content="{{ global.image | prepend: global.url }}" />
+  {% endif %}
+  <meta property="og:image:width" content="640" />
+  <meta property="og:image:height" content="640" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="{% if page.data.title %}{{ page.data.title | escape }}{% if page.data.author %} | {{ global.authors[page.data.author].name }}{% endif %}{% else %}{{ global.title | escape }}{% endif %}" />
+  <meta name="twitter:url" content="{{ page.url  | remove: 'index.html' | remove: '.html' | prepend: global.url }}" />
+  <meta name="twitter:site" content="{{ global.title }}" />
+  <meta name="twitter:creator" content="{% if page.data.author %}{{ global.authors[page.data.author].name }}{% else %}{{ global.title }}{% endif %}" />
+  <meta name="twitter:description"{% if page.data.description %} content="{{ page.data.description | strip_html | truncate: 200 | escape }}" {% else %} content="{{ global.description | strip_html | truncate: 200 | escape }}" {% endif %} />
+  {% if page.data.image %}
+  <meta name="twitter:image" content="{{ page.data.image | prepend: global.url }}" />
+  {% else %}
+  <meta name="twitter:image" content="{{ global.image | prepend: global.url }}" />
+  {% endif %}
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ global.url }}/assets/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ global.url }}/assets/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ global.url }}/assets/favicons/favicon-16x16.png" />
+  <link rel="mask-icon" href="{{ global.url }}/assets/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="apple-mobile-web-app-title" content="{{ global.title }}" />
+  <meta name="application-name" content="{{ global.title }}" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#2c2c2c" />
+  <link rel="stylesheet" href="{{ global.url }}/assets/css/style.css" />
 </head>
