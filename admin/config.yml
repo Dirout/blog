@@ -2,7 +2,6 @@ backend:
   name: github
   repo: Dirout/blog
   branch: master
-publish_mode: editorial_workflow
 media_folder: "assets/img/uploads"
 site_url: https://dirout.github.io/blog
 logo_url: https://dirout.github.io/assets/icons/vector/logo.svg
