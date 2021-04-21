@@ -1,0 +1,13 @@
+---
+layout: post
+collection: posts
+permalink: /{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month
+  }}/{{ page.date.day }}/{{ page.name }}/index.html
+title: The Internet as a Digital Aristotle
+author: em
+date: 2021-04-21T13:49:46+00:00
+tags:
+  - draft
+markdown: true
+---
+DRAFT
