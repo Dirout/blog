@@ -20,7 +20,7 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Collection", name: "collection", widget: "hidden", default: "posts"}
-      - {label: "Permalink", name: "permalink", widget: "hidden", default: "{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month }}/{{ page.date.day }}/{{ page.data.name }}/index.html"}
+      - {label: "Permalink", name: "permalink", widget: "hidden", default: "{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month }}/{{ page.date.day }}/{{ page.name }}/index.html"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Author", name: "author", widget: "select", options: ["em", "evan", "both"]}
       - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: "HH:mm:ss", format: "YYYY-MM-DDTHH:mm:ss+00:00", picker_utc: true}
