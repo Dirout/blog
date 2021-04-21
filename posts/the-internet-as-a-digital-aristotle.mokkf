@@ -6,6 +6,8 @@ permalink: "{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month
 title: The Internet as a Digital Aristotle
 author: em
 date: 2021-04-21T13:39:45+00:00
+tags:
+  - draft
 markdown: true
 ---
 DRAFT
