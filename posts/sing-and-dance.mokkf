@@ -6,6 +6,7 @@ permalink: /{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month
 title: Sing and Dance
 author: em
 date: 2021-04-23T13:27:00+00:00
+tags: [""]
 markdown: true
 ---
 I would like to sing and dance,
