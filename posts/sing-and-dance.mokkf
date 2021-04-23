@@ -6,20 +6,21 @@ permalink: /{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month
 title: Sing and Dance
 author: em
 date: 2021-04-23T13:27:00+00:00
-tags: [""]
+tags:
+  - ""
 markdown: true
 ---
-I would like to sing and dance,
-I would like to run and prance,
-I would like to buy a dog,
+I would like to sing and dance,\
+I would like to run and prance,\
+I would like to buy a dog,\
 and feed him to the wild hogs!
 
-I would like to sing and dance,
-I would like to run and prance,
-I would like a box of flies,
+I would like to sing and dance,\
+I would like to run and prance,\
+I would like a box of flies,\
 Feed them to a million guys!
 
-I would like to sing and dance,
-I would like to run and prance,
+I would like to sing and dance,\
+I would like to run and prance,\
 A loaf of bread for my poor, poor daughters
 'Lest they become poor, poor squatters!
