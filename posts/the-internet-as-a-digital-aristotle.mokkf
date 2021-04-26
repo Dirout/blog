@@ -5,7 +5,7 @@ permalink: /{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month
   }}/{{ page.date.day }}/{{ page.name }}/index.html
 title: The Internet as a Digital Aristotle
 author: em
-date: 2021-04-26T14:50:28+00:00
+date: 2021-04-26T15:18:34+00:00
 tags:
   - draft
 markdown: true
@@ -15,6 +15,11 @@ When I was quite young, I was rather liberal-conservative, downright Calvinist, 
 Needless to say, I grew up. Over the years, beginning horrifically young, I'd watch friends of mine turn to alcohol, vaping, or some other vice to self-medicate lives which they could not tolerate, and in doing so threw away any potential to rise above their hardships.\
 I began to fear for myself; my father was an alcoholic, broken man whose only expressed emotion was rage, and my mother was a paranoid schizophrenic who'd scream every second of every day, *ad infinitum*—it was an abusive, stressful, unforgiving home. What was to become of me?
 
-The smell of beer on my father's breath stung my nose and I fled toward education. I dove into my schoolwork wholly. Crying over homework became routine, grades became a matter of life and death, and I wouldn't accept anything short of excellence from myself. School became my home, my way out, and to this day it still is.
+The smell of beer on my father's breath stung my nose and I fled toward education. I dove into my schoolwork completely. Crying over homework became routine, grades became a matter of life and death, and I wouldn't accept anything short of excellence from myself. School became my home, my way out, and to this day it still is.
 
-School only lasts for eight hours, not 24. There's only so much a teacher can provide—they may feel like a parent, but they are not. The year ends, you move on, and a new lecturer enters your life. This self-improvement that I sought, the fuel to my ambition, would have to come from myself.\
+School only lasts for eight hours, not 24. There's only so much a teacher can provide—they may feel like a parent, but they are not. The year ends, you move on, and a new lecturer enters your life.\
+This improvement that I sought, this fuel to my ambition & spirit, the seizing of my potential, would have to be brought about wholly by my own hand.
+
+My passion was, and is, computer science, and I was determined to pursue the life of a computer scientist to any extent I could. In elementary school, I was teaching myself Visual Basic and UI design. I'd write small Batch scripts, mostly text-based games, which I'd email to my classmates and teachers.\
+I spent middle school learning Python, the basics of using a Unix-like system, the structure of an operating system, and how a software development language actually facilitates code execution. I wrote the software which powered the clocks spread throughout my school, and a basic calculator app with a GUI, a step up from a text-based interface.\
+In high school, I took an AP computer science course, one of the ten college credit courses I took in school, where I learned Java. From there, I taught myself C# and Rust, and became a developer at the school's Computer Science Lab with only two other students. It was there when I began work on the predecessor to what is now Dokkoo, a data-driven media publication tool built for government, healthcare, and digital news. In the months preceding graduation, I ended up writing the Macro Output Key Kit standard for creating Jamstack-architectured projects.
