@@ -3,27 +3,13 @@ layout: post
 collection: posts
 permalink: /{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month
   }}/{{ page.date.day }}/{{ page.name }}/index.html
-title: My Immigrant Story
+title: An Immigrant Story
 author: em
-date: 2021-04-28T15:02:55+00:00
+date: 2021-04-28T15:03:22+00:00
 tags:
   - draft
 markdown: true
 ---
-***
-NOTES:
-  - POINT: My experience as an American immigrant has shaped my ambition
-  - Defining ambition
-    - Self-improvement or achievement?
-  - Desire for a life with dignity drove me to seek achievement
-  - As I didn't have a life to be proud of, I sought self-improvement
-    - My name had no meaning; no connections, wealth, or history
-    - No mark would be left by my life as it was, making the suffering pointless
-    - Alcoholic father, schizophrenic mother, both abusive
-  - Education became a means to rise above adversity
-  - I believe that being American means being able to succeed based on merit, because America is a land of opportunity
-***
-
 Ambition is a word that is rarely used without a connotation, implying either a consuming selfishness or an intense desire to overcome. The word is used with great promise, 'try' becomes 'will' with no guaranteed 'how'; regardless, my father was full of ambition. A driven man, he wanted to leave a mark, a legacy, a romantic fiction in the place of an otherwise tragic story. To him, leaving something for his descendants was the only thing that could give him his personal pride, his dignity. If I were to ascribe one positive trait of mine to him, it would be my need for dignity.
 
 My father took my mother and I from Finland to the United States when I was a little under three years old, accepting a job offer he had received from a glass manufacturing company in a city called Cincinnati. To him, it was a town comparable to the Kangasala from which he'd just left: foreign. There, and now here, our family name meant nothing. 'Sayahi' was a series of sounds with no history, no connections, no reputation of any sort.
