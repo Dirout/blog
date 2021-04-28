@@ -1,26 +1,28 @@
 ---
-NOTES:
-  - POINT: My experience as an American immigrant has shaped my ambition
-  - Defining ambition - Self-improvement or achievement?
-  - Desire for a life with dignity drove me to seek achievement
-  - As I didn't have a life to be proud of, I sought self-improvement - My name
-    had no meaning; no connections, wealth, or history - No mark would be left
-    by my life as it was, making the suffering pointless - Alcoholic father,
-    schizophrenic mother, both abusive
-  - Education became a means to rise above adversity
-  - I believe that being American means being able to succeed based on merit,
-    because America is a land of opportunity
 layout: post
 collection: posts
 permalink: /{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month
   }}/{{ page.date.day }}/{{ page.name }}/index.html
 title: My Immigrant Story
 author: em
-date: 2021-04-28T13:37:11+00:00
+date: 2021-04-28T13:38:27+00:00
 tags:
   - draft
 markdown: true
 ---
+***
+NOTES:
+  - POINT: My experience as an American immigrant has shaped my ambition
+  - Defining ambition
+    - Self-improvement or achievement?
+  - Desire for a life with dignity drove me to seek achievement
+  - As I didn't have a life to be proud of, I sought self-improvement
+    - My name had no meaning; no connections, wealth, or history
+    - No mark would be left by my life as it was, making the suffering pointless
+    - Alcoholic father, schizophrenic mother, both abusive
+  - Education became a means to rise above adversity
+  - I believe that being American means being able to succeed based on merit, because America is a land of opportunity
+***
 
 Ambition is a word I've struggled to define in any meaningful sense. It's a word which appears to change its meaning to favour selfishness or merit depending on who's using it. Regardless, my father was full of it; a driven man, he wanted to leave a mark, a legacy, a romantic fiction in the place of an otherwise tragic story. To him, leaving something for his descendants was the only thing that could give him his personal pride, his dignity. If I were to ascribe one positive trait of mine to him, it'd be my need for dignity.
 
