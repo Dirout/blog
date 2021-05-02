@@ -1,0 +1,27 @@
+---
+layout: post
+collection: posts
+permalink: /{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month
+  }}/{{ page.date.day }}/{{ page.name }}/index.html
+title: Inauguration Day
+author: em
+date: 2021-01-20T18:03:00+00:00
+tags:
+  - ramble
+markdown: true
+---
+-
+# A foreword
+This essay was finished in private after some reflection on 20 January 2021, the day the 46th President of the United States, Joseph Robinette Biden Jr, entered office. I now feel obligated to publish my words shortly after his first hundred days in office concluded two days ago, with the hopes that somehow, some way, somewhere, change will come again.\
+Society is based on the fundamental human principle of deliberation, careful, collaborative, productive discussion that leverages the intellectual power of all involved for the benefit of the people, *all people*.\
+I may be in the field of software engineering, but I am an American and I am a human. Our constitution begins with the words, 'We the people … ', and this country has long failed to recognize who people are. Personhood is not earned, it is not a privilege, and it is not a title or office held.\
+The deliberative body of a society is its most sacred feature, if such a thing were to exist, as a populace's most discordant behaviours are quashed and the lives of all are put toward favour.\
+When those in the position to represent the people do not, but instead represent only themselves, they are committing a political terrorism and an attack on their own. *Somehow, some way, somewhere, change will come again.*
+-
+        I’ve never really eaten at the dinner table before. I mean, it’s not like I don’t know what it’s for, I’m perfectly aware that that’s where people eat, but it’s not where I eat. I prefer to eat by myself, where I’m most comfortable, in my room, by my computer, either getting some work done or decompressing like a leaky balloon. My parents eat some exotic, and often quite smelly Persian food, so I’m naturally hesitant to eat with them. So, why is it that I let my mother eat in my closet, infecting my clothes with an absolutely sacrilegious smell?
+        It’s not by choice. She’s set up camp there, watching videos on conspiracy theories and chatting with strangers who’re equally as lost as her. My mother is a paranoid schizophrenic, and one of the many who’ve had their delusional tendencies amplified by the Web. In a world where anyone can say anything and have themselves heard, those who have trouble separating their internal fantasies and their perception of the external reality are allowed to exercise their solipsistic mindset; a troubling lack of self awareness is plaguing society.
+        The ‘information superhighway’, as the WWW was long ago dubbed, gave humanity access to its collective knowledge. It allowed me to study software development as a young child, giving me the opportunity to develop my most powerful skill in an environment that otherwise couldn’t have supported it. Without the Web, I would’ve never developed a political consciousness, and I most certainly wouldn’t have encountered the texts on existentialist philosophy that got me through high school.
+        Yet, that very same set of technologies, which are harnessed by corporations seeking to show people what they want to see, sent my mother down a spiral. She, like many others, fell prey to the mythological story of a great American past, and the delusion that our nation is fundamentally divided by an ‘us’ versus a ‘them’, driven down by various minority groups in society, replacing the majority in secret.
+        When the Internet has positioned ideology as one’s unconscious fantasy which defines the basis of their reality, then it is not merely the communications technology it was intended to be. The Internet, as it presently is, is something insidious, malevolent, and destructive in its structure; a tool to exploit the masses. Computer scientist and author Bruce Schneier wrote, in his discussion paper titled *Power in the Age of the Feudal Internet*, ‘Power is consolidating around both vendor-managed user devices and large personal-data aggregators … the rise of cloud computing means that we no longer have control of our data. … And second, the rise of vendor-managed platforms means that we no longer have control of our computing devices’. In using the same handful of services every day, we’ve given up our individual sovereignty.
+        The ripple effects of this have turned into waves, crashing at the shore of our democracy. The threat of ‘fake news’  during the 2016 US election was alarming, and the attempted coup d'état by the supporters of the outgoing American government on the 6 January 2021 left a perverse stain on this country. There are two paths left to take: continue down the road of corporatism & forfeit our democracy, or put the Internet in the hands of the people to build a stronger union.
+        I’ve taken it upon myself to begin building the technologies for a decentralized internet this past year. *Mokk*, a specification on how to structure and write data-driven Internet documents, and *Oku*, a program that takes advantage of the IPFS protocol and *Mokk* documents to allow for the browsing of a decentralized Internet. My dream of a hive to replace our web is one I intend to pursue for the rest of my life, and at university; self-improvement is a collective responsibility, and it would be unjust to leave the world as it is: disconnected from itself.
