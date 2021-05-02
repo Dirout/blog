@@ -5,7 +5,7 @@ permalink: /{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month
   }}/{{ page.date.day }}/{{ page.name }}/index.html
 title: An Immigrant Story
 author: em
-date: 2021-04-30T15:49:26+00:00
+date: 2021-05-02T17:23:42+00:00
 tags:
   - draft
 markdown: true
@@ -28,4 +28,4 @@ This isolation from the outside world, and the need to detach from my experience
 
 None of what I did as a young child would be considered particularly impressive, but that's how I started my journey away from my troubles. Since then, I've further pursued computer science, starting several open-source projects such as the 'Macro Output Key Kit (Mokk)' standard, a technical standard for creating Jamstack-architectured projects, 'Dokkoo', a data-driven media publication tool built for government, healthcare, and digital news, 'Oku', an in-development peer-to-peer browser aiming to create an alternative to the Web, and 'Populi', a prototype of what would become the first open-author media publication.
 
-Throughout my years of maturation, my understanding of what I want out of life has evolved; perhaps this is the existentialist in me talking, but my present wish is to simply live a life where I'm contented. I'm not sure if I've 'overcome' my personal hardships or if I've merely coped with them, but I do know that my adaptation to them will help me in my future—I have a genuine passion for a field that's in demand, a field that I'd be happy spending the rest of my life in, a field that I need a college degree and education to become involved in to the measure in which I dream to be. I have come so far, and I feel I have so much further to travel. I will not rest until I have that life with dignity.
+Throughout my years of maturation, my understanding of what I want out of life has evolved; I don't merely seek a life of contentment in some abstract sense, I look forward to what I want to accomplish. I see myself working to shape the role computing has in our society today—there is so much room for true innovation in software to the point where it's really quite riveting! I have a genuine passion for a field that's in demand, a field that I'd be happy spending the rest of my life in, a field that I need a college degree and education to become involved in to the measure in which I dream to be. I have come so far, and I feel I have so much further to travel. I will not rest until I have that life with dignity.
