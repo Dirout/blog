@@ -270,7 +270,7 @@
                         <h1 class="header-title" itemprop="headline">Notes - Package manager</h1>
                         
                         <div class="post-meta">
-                            <time datetime="2021-05-09T17:29:50+00:00" itemprop="datePublished">
+                            <time datetime="2021-05-09T17:37:55+00:00" itemprop="datePublished">
                                 9 May 2021
                             </time>
                             <span itemprop="author" itemscope itemtype="https://schema.org/Person">
@@ -325,7 +325,11 @@ c. Outcome three: Dependency list satisfied (continue)</li>
 </li>
 <li>Keeping track of installed packages?
 <ul>
-<li>Binary serialization using <a href="https://crates.io/crates/bincode"><code>bincode</code></a></li>
+<li>Binary serialization using <a href="https://crates.io/crates/bincode"><code>bincode</code></a> of a <code>Vec&lt;&amp;str&gt;</code> containing installed package names
+<ul>
+<li>Would loading all the installed packages into RAM from disk really be such a good idea? Ultimately, my primary concern is performance. How much space would a list of, say, 4,000 packages take up on disk? What about in RAM?</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -381,7 +385,11 @@ c. Outcome three: Dependency list satisfied (continue)</li>
 </li>
 <li>Keeping track of installed packages?
 <ul>
-<li>Binary serialization using <a href="https://crates.io/crates/bincode"><code>bincode</code></a></li>
+<li>Binary serialization using <a href="https://crates.io/crates/bincode"><code>bincode</code></a> of a <code>Vec&lt;&amp;str&gt;</code> containing installed package names
+<ul>
+<li>Would loading all the installed packages into RAM from disk really be such a good idea? Ultimately, my primary concern is performance. How much space would a list of, say, 4,000 packages take up on disk? What about in RAM?</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

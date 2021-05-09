@@ -311,8 +311,8 @@ When those in the position to represent the people do not, but instead represent
 </author>
 <title>Notes - Package manager</title>
 <link href="https://Dirout.github.io/blog/posts/2021/05/09/notes-package-manager/index.html"/>
-<pubdate>Sun, 09 May 2021 17:29:50 +0000</pubdate>
-<updated>Sun, 09 May 2021 17:29:50 +0000</updated>
+<pubdate>Sun, 09 May 2021 17:37:55 +0000</pubdate>
+<updated>Sun, 09 May 2021 17:37:55 +0000</updated>
 <id>https://Dirout.github.io/blog/posts/2021/05/09/notes-package-manager/index.html</id>
 <content type="html">&lt;p&gt;Package manager:&lt;/p&gt;
 &lt;ul&gt;
@@ -360,7 +360,11 @@ c. Outcome three: Dependency list satisfied (continue)&lt;/li&gt;
 &lt;/li&gt;
 &lt;li&gt;Keeping track of installed packages?
 &lt;ul&gt;
-&lt;li&gt;Binary serialization using &lt;a href=&quot;https://crates.io/crates/bincode&quot;&gt;&lt;code&gt;bincode&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Binary serialization using &lt;a href=&quot;https://crates.io/crates/bincode&quot;&gt;&lt;code&gt;bincode&lt;/code&gt;&lt;/a&gt; of a &lt;code&gt;Vec&amp;lt;&amp;amp;str&amp;gt;&lt;/code&gt; containing installed package names
+&lt;ul&gt;
+&lt;li&gt;Would loading all the installed packages into RAM from disk really be such a good idea? Ultimately, my primary concern is performance. How much space would a list of, say, 4,000 packages take up on disk? What about in RAM?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
