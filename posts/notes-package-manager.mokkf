@@ -5,7 +5,7 @@ permalink: /{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month
   }}/{{ page.date.day }}/{{ page.name }}/index.html
 title: Notes - Package manager
 author: em
-date: 2021-05-09T17:39:57+00:00
+date: 2021-05-09T17:40:33+00:00
 tags:
   - micro
 markdown: true
@@ -15,7 +15,7 @@ Package manager:
   - Remove
   - Upgrade
 
-Install:
+# Install
   1. Attempt to get list of dependencies
     a. Outcome one: No dependencies (continue)
     b. Outcome two: Impossible situation (error)
@@ -29,7 +29,7 @@ Install:
     - It appears the best algorithm for this would be a topological sort? Not sure what that is yet
   3. Done!
 
-Things to consider: 
+## Things to consider
 - Hooks? Here's [an article](https://michael.stapelberg.ch/posts/2019-07-20-hooks-and-triggers/) on the subject.
   - Packages with hooks can't be installed in parallel with other packages.
   - Hooks present many downsides, but having package manager triggers don't seem any better. The alternative would be to have the package manager hardcode a pre-set list of actions, but I don't see how this would improve the primary downside: an interruption to installation.
