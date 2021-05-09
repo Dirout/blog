@@ -5,7 +5,7 @@ permalink: /{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month
   }}/{{ page.date.day }}/{{ page.name }}/index.html
 title: Notes - Package manager
 author: em
-date: 2021-05-09T17:16:09+00:00
+date: 2021-05-09T17:29:50+00:00
 tags:
   - micro
 markdown: true
@@ -21,10 +21,19 @@ Install:
     b. Outcome two: Impossible situation (error)
     c. Outcome three: Dependency list satisfied (continue)
   - It appears using a SAT solver would be best. Only one problem … I can't understand how to use it or what exactly one does.
-    - Articles I've looked at:
-      1. [https://research.swtch.com/version-sat](https://research.swtch.com/version-sat)
+    - Things I've looked at:
+      1. [Version SAT by Russ Cox](https://research.swtch.com/version-sat)
+      2. [Cargo's dependency resolution](https://github.com/rust-lang/cargo/blob/8b5aec111926d1d03d2da32dd494e0fff073f870/src/cargo/core/resolver/mod.rs#L426)
   2. Decide order of dependency installation
     - Some can be installed in parallel
     - It appears the best algorithm for this would be a topological sort? Not sure what that is yet
   3. Done!
-Thing to consider: Hooks? Here's [an article](https://michael.stapelberg.ch/posts/2019-07-20-hooks-and-triggers/) on the subject.
+
+Things to consider: 
+- Hooks? Here's [an article](https://michael.stapelberg.ch/posts/2019-07-20-hooks-and-triggers/) on the subject.
+  - Packages with hooks can't be installed in parallel with other packages.
+  - Hooks present many downsides, but having package manager triggers don't seem any better. The alternative would be to have the package manager hardcode a pre-set list of actions, but I don't see how this would improve the primary downside: an interruption to installation.
+- Installing an individual package?
+  - The mainstream approach is archive extraction. This would be a bit slow, wouldn't it? Would it be possible to download files directly to the machine? Wouldn't this increase download times despite lowering processor time? Perhaps a disk image would work instead? But how would you use it after mounting it, and wouldn't this lead to the same problem of increasing download times if the disk image is bigger than an archive?
+- Keeping track of installed packages?
+  - Binary serialization using [`bincode`](https://crates.io/crates/bincode)
