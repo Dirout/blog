@@ -3,9 +3,9 @@ layout: post
 collection: posts
 permalink: /{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month
   }}/{{ page.date.day }}/{{ page.name }}/index.html
-title: Notes - Package manager
+title: Quick notes on package managers
 author: em
-date: 2021-05-09T17:50:04+00:00
+date: 2021-05-09T17:50:47+00:00
 tags:
   - micro
 markdown: true
