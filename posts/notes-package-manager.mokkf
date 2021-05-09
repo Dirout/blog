@@ -5,7 +5,7 @@ permalink: /{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month
   }}/{{ page.date.day }}/{{ page.name }}/index.html
 title: Notes - Package manager
 author: em
-date: 2021-05-09T17:37:55+00:00
+date: 2021-05-09T17:39:57+00:00
 tags:
   - micro
 markdown: true
@@ -38,3 +38,4 @@ Things to consider:
 - Keeping track of installed packages?
   - Binary serialization using [`bincode`](https://crates.io/crates/bincode) of a `Vec<&str>` containing installed package names
     - Would loading all the installed packages into RAM from disk really be such a good idea? Ultimately, my primary concern is performance. How much space would a list of, say, 4,000 packages take up on disk? What about in RAM?
+    - Consider databases instead? Find the fastest Rust database implementation that'll work.
