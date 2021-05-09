@@ -311,8 +311,8 @@ When those in the position to represent the people do not, but instead represent
 </author>
 <title>Notes - Package manager</title>
 <link href="https://Dirout.github.io/blog/posts/2021/05/09/notes-package-manager/index.html"/>
-<pubdate>Sun, 09 May 2021 17:45:24 +0000</pubdate>
-<updated>Sun, 09 May 2021 17:45:24 +0000</updated>
+<pubdate>Sun, 09 May 2021 17:47:01 +0000</pubdate>
+<updated>Sun, 09 May 2021 17:47:01 +0000</updated>
 <id>https://Dirout.github.io/blog/posts/2021/05/09/notes-package-manager/index.html</id>
 <content type="html">&lt;p&gt;Package manager:&lt;/p&gt;
 &lt;ul&gt;
@@ -324,9 +324,9 @@ When those in the position to represent the people do not, but instead represent
 &lt;ol&gt;
 &lt;li&gt;Attempt to get list of dependencies
 &lt;ol&gt;
-&lt;li&gt;Outcome one: No dependencies (continue)&lt;/li&gt;
-&lt;li&gt;Outcome two: Impossible situation (error)&lt;/li&gt;
-&lt;li&gt;Outcome three: Dependency list satisfied (continue)&lt;/li&gt;
+&lt;li&gt;Outcome one: No dependencies (&lt;strong&gt;continue&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;Outcome two: Impossible situation (&lt;strong&gt;error&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;Outcome three: Dependency list satisfied (&lt;strong&gt;continue&lt;/strong&gt;)&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
 &lt;li&gt;It appears using a SAT solver would be best. Only one problem … I can’t understand how to use it or what exactly one does.
@@ -346,7 +346,7 @@ When those in the position to represent the people do not, but instead represent
 - It appears the best algorithm for this would be a topological sort? Not sure what that is yet&lt;/li&gt;
 &lt;li&gt;Done!&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2&gt;Things to consider&lt;/h2&gt;
+&lt;h3&gt;Things to consider&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Hooks? Here’s &lt;a href=&quot;https://michael.stapelberg.ch/posts/2019-07-20-hooks-and-triggers/&quot;&gt;an article&lt;/a&gt; on the subject.
 &lt;ul&gt;
