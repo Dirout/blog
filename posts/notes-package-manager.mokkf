@@ -5,7 +5,7 @@ permalink: /{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month
   }}/{{ page.date.day }}/{{ page.name }}/index.html
 title: Notes - Package manager
 author: em
-date: 2021-05-09T17:29:50+00:00
+date: 2021-05-09T17:37:55+00:00
 tags:
   - micro
 markdown: true
@@ -36,4 +36,5 @@ Things to consider:
 - Installing an individual package?
   - The mainstream approach is archive extraction. This would be a bit slow, wouldn't it? Would it be possible to download files directly to the machine? Wouldn't this increase download times despite lowering processor time? Perhaps a disk image would work instead? But how would you use it after mounting it, and wouldn't this lead to the same problem of increasing download times if the disk image is bigger than an archive?
 - Keeping track of installed packages?
-  - Binary serialization using [`bincode`](https://crates.io/crates/bincode)
+  - Binary serialization using [`bincode`](https://crates.io/crates/bincode) of a `Vec<&str>` containing installed package names
+    - Would loading all the installed packages into RAM from disk really be such a good idea? Ultimately, my primary concern is performance. How much space would a list of, say, 4,000 packages take up on disk? What about in RAM?
