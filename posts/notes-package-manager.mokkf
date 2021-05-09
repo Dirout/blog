@@ -1,0 +1,30 @@
+---
+layout: post
+collection: posts
+permalink: /{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month
+  }}/{{ page.date.day }}/{{ page.name }}/index.html
+title: Notes - Package manager
+author: em
+date: 2021-05-09T17:16:09+00:00
+tags:
+  - micro
+markdown: true
+---
+Package manager:
+  - Install
+  - Remove
+  - Upgrade
+
+Install:
+  1. Attempt to get list of dependencies
+    a. Outcome one: No dependencies (continue)
+    b. Outcome two: Impossible situation (error)
+    c. Outcome three: Dependency list satisfied (continue)
+  - It appears using a SAT solver would be best. Only one problem … I can't understand how to use it or what exactly one does.
+    - Articles I've looked at:
+      1. [https://research.swtch.com/version-sat](https://research.swtch.com/version-sat)
+  2. Decide order of dependency installation
+    - Some can be installed in parallel
+    - It appears the best algorithm for this would be a topological sort? Not sure what that is yet
+  3. Done!
+Thing to consider: Hooks? Here's [an article](https://michael.stapelberg.ch/posts/2019-07-20-hooks-and-triggers/) on the subject.
