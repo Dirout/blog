@@ -270,7 +270,7 @@
                         <h1 class="header-title" itemprop="headline">Notes - Package manager</h1>
                         
                         <div class="post-meta">
-                            <time datetime="2021-05-09T17:42:43+00:00" itemprop="datePublished">
+                            <time datetime="2021-05-09T17:45:24+00:00" itemprop="datePublished">
                                 9 May 2021
                             </time>
                             <span itemprop="author" itemscope itemtype="https://schema.org/Person">
@@ -288,16 +288,21 @@
 <h1>Install</h1>
 <ol>
 <li>Attempt to get list of dependencies
-1. Outcome one: No dependencies (continue)
-2. Outcome two: Impossible situation (error)
-3. Outcome three: Dependency list satisfied (continue)
-- It appears using a SAT solver would be best. Only one problem … I can’t understand how to use it or what exactly one does.
+<ol>
+<li>Outcome one: No dependencies (continue)</li>
+<li>Outcome two: Impossible situation (error)</li>
+<li>Outcome three: Dependency list satisfied (continue)</li>
+</ol>
+<ul>
+<li>It appears using a SAT solver would be best. Only one problem … I can’t understand how to use it or what exactly one does.
 <ul>
 <li>Things I’ve looked at:
 <ol>
 <li><a href="https://research.swtch.com/version-sat">Version SAT by Russ Cox</a></li>
 <li><a href="https://github.com/rust-lang/cargo/blob/8b5aec111926d1d03d2da32dd494e0fff073f870/src/cargo/core/resolver/mod.rs#L426">Cargo’s dependency resolution</a></li>
 </ol>
+</li>
+</ul>
 </li>
 </ul>
 </li>
@@ -345,16 +350,21 @@
 <h1>Install</h1>
 <ol>
 <li>Attempt to get list of dependencies
-1. Outcome one: No dependencies (continue)
-2. Outcome two: Impossible situation (error)
-3. Outcome three: Dependency list satisfied (continue)
-- It appears using a SAT solver would be best. Only one problem … I can’t understand how to use it or what exactly one does.
+<ol>
+<li>Outcome one: No dependencies (continue)</li>
+<li>Outcome two: Impossible situation (error)</li>
+<li>Outcome three: Dependency list satisfied (continue)</li>
+</ol>
+<ul>
+<li>It appears using a SAT solver would be best. Only one problem … I can’t understand how to use it or what exactly one does.
 <ul>
 <li>Things I’ve looked at:
 <ol>
 <li><a href="https://research.swtch.com/version-sat">Version SAT by Russ Cox</a></li>
 <li><a href="https://github.com/rust-lang/cargo/blob/8b5aec111926d1d03d2da32dd494e0fff073f870/src/cargo/core/resolver/mod.rs#L426">Cargo’s dependency resolution</a></li>
 </ol>
+</li>
+</ul>
 </li>
 </ul>
 </li>
