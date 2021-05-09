@@ -5,7 +5,7 @@ permalink: /{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month
   }}/{{ page.date.day }}/{{ page.name }}/index.html
 title: Notes - Package manager
 author: em
-date: 2021-05-09T17:47:01+00:00
+date: 2021-05-09T17:47:43+00:00
 tags:
   - micro
 markdown: true
@@ -20,10 +20,10 @@ Package manager:
         1. Outcome one: No dependencies (**continue**)
         2. Outcome two: Impossible situation (**error**)
         3. Outcome three: Dependency list satisfied (**continue**)
-        - It appears using a SAT solver would be best. Only one problem … I can't understand how to use it or what exactly one does.
-          - Things I've looked at:
-            1. [Version SAT by Russ Cox](https://research.swtch.com/version-sat)
-            2. [Cargo's dependency resolution](https://github.com/rust-lang/cargo/blob/8b5aec111926d1d03d2da32dd494e0fff073f870/src/cargo/core/resolver/mod.rs#L426)
+            - It appears using a SAT solver would be best. Only one problem … I can't understand how to use it or what exactly one does.
+              - Things I've looked at:
+                1. [Version SAT by Russ Cox](https://research.swtch.com/version-sat)
+                2. [Cargo's dependency resolution](https://github.com/rust-lang/cargo/blob/8b5aec111926d1d03d2da32dd494e0fff073f870/src/cargo/core/resolver/mod.rs#L426)
   2. Decide order of dependency installation
     - Some can be installed in parallel
     - It appears the best algorithm for this would be a topological sort? Not sure what that is yet
