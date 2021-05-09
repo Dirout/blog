@@ -311,8 +311,8 @@ When those in the position to represent the people do not, but instead represent
 </author>
 <title>Notes - Package manager</title>
 <link href="https://Dirout.github.io/blog/posts/2021/05/09/notes-package-manager/index.html"/>
-<pubdate>Sun, 09 May 2021 17:47:01 +0000</pubdate>
-<updated>Sun, 09 May 2021 17:47:01 +0000</updated>
+<pubdate>Sun, 09 May 2021 17:47:43 +0000</pubdate>
+<updated>Sun, 09 May 2021 17:47:43 +0000</updated>
 <id>https://Dirout.github.io/blog/posts/2021/05/09/notes-package-manager/index.html</id>
 <content type="html">&lt;p&gt;Package manager:&lt;/p&gt;
 &lt;ul&gt;
@@ -326,8 +326,7 @@ When those in the position to represent the people do not, but instead represent
 &lt;ol&gt;
 &lt;li&gt;Outcome one: No dependencies (&lt;strong&gt;continue&lt;/strong&gt;)&lt;/li&gt;
 &lt;li&gt;Outcome two: Impossible situation (&lt;strong&gt;error&lt;/strong&gt;)&lt;/li&gt;
-&lt;li&gt;Outcome three: Dependency list satisfied (&lt;strong&gt;continue&lt;/strong&gt;)&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;Outcome three: Dependency list satisfied (&lt;strong&gt;continue&lt;/strong&gt;)
 &lt;ul&gt;
 &lt;li&gt;It appears using a SAT solver would be best. Only one problem … I can’t understand how to use it or what exactly one does.
 &lt;ul&gt;
@@ -340,6 +339,8 @@ When those in the position to represent the people do not, but instead represent
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;Decide order of dependency installation
 - Some can be installed in parallel
