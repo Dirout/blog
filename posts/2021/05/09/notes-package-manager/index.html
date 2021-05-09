@@ -270,7 +270,7 @@
                         <h1 class="header-title" itemprop="headline">Notes - Package manager</h1>
                         
                         <div class="post-meta">
-                            <time datetime="2021-05-09T17:16:09+00:00" itemprop="datePublished">
+                            <time datetime="2021-05-09T17:29:50+00:00" itemprop="datePublished">
                                 9 May 2021
                             </time>
                             <span itemprop="author" itemscope itemtype="https://schema.org/Person">
@@ -295,9 +295,10 @@ c. Outcome three: Dependency list satisfied (continue)</li>
 <ul>
 <li>It appears using a SAT solver would be best. Only one problem … I can’t understand how to use it or what exactly one does.
 <ul>
-<li>Articles I’ve looked at:
+<li>Things I’ve looked at:
 <ol>
-<li><a href="https://research.swtch.com/version-sat">https://research.swtch.com/version-sat</a></li>
+<li><a href="https://research.swtch.com/version-sat">Version SAT by Russ Cox</a></li>
+<li><a href="https://github.com/rust-lang/cargo/blob/8b5aec111926d1d03d2da32dd494e0fff073f870/src/cargo/core/resolver/mod.rs#L426">Cargo’s dependency resolution</a></li>
 </ol>
 </li>
 </ul>
@@ -307,9 +308,27 @@ c. Outcome three: Dependency list satisfied (continue)</li>
 <li>Decide order of dependency installation
 - Some can be installed in parallel
 - It appears the best algorithm for this would be a topological sort? Not sure what that is yet</li>
-<li>Done!
-Thing to consider: Hooks? Here’s <a href="https://michael.stapelberg.ch/posts/2019-07-20-hooks-and-triggers/">an article</a> on the subject.</li>
+<li>Done!</li>
 </ol>
+<p>Things to consider: </p>
+<ul>
+<li>Hooks? Here’s <a href="https://michael.stapelberg.ch/posts/2019-07-20-hooks-and-triggers/">an article</a> on the subject.
+<ul>
+<li>Packages with hooks can’t be installed in parallel with other packages.</li>
+<li>Hooks present many downsides, but having package manager triggers don’t seem any better. The alternative would be to have the package manager hardcode a pre-set list of actions, but I don’t see how this would improve the primary downside: an interruption to installation.</li>
+</ul>
+</li>
+<li>Installing an individual package?
+<ul>
+<li>The mainstream approach is archive extraction. This would be a bit slow, wouldn’t it? Would it be possible to download files directly to the machine? Wouldn’t this increase download times despite lowering processor time? Perhaps a disk image would work instead? But how would you use it after mounting it, and wouldn’t this lead to the same problem of increasing download times if the disk image is bigger than an archive?</li>
+</ul>
+</li>
+<li>Keeping track of installed packages?
+<ul>
+<li>Binary serialization using <a href="https://crates.io/crates/bincode"><code>bincode</code></a></li>
+</ul>
+</li>
+</ul>
 </span>
                         </div>
                         
@@ -332,9 +351,10 @@ c. Outcome three: Dependency list satisfied (continue)</li>
 <ul>
 <li>It appears using a SAT solver would be best. Only one problem … I can’t understand how to use it or what exactly one does.
 <ul>
-<li>Articles I’ve looked at:
+<li>Things I’ve looked at:
 <ol>
-<li><a href="https://research.swtch.com/version-sat">https://research.swtch.com/version-sat</a></li>
+<li><a href="https://research.swtch.com/version-sat">Version SAT by Russ Cox</a></li>
+<li><a href="https://github.com/rust-lang/cargo/blob/8b5aec111926d1d03d2da32dd494e0fff073f870/src/cargo/core/resolver/mod.rs#L426">Cargo’s dependency resolution</a></li>
 </ol>
 </li>
 </ul>
@@ -344,9 +364,27 @@ c. Outcome three: Dependency list satisfied (continue)</li>
 <li>Decide order of dependency installation
 - Some can be installed in parallel
 - It appears the best algorithm for this would be a topological sort? Not sure what that is yet</li>
-<li>Done!
-Thing to consider: Hooks? Here’s <a href="https://michael.stapelberg.ch/posts/2019-07-20-hooks-and-triggers/">an article</a> on the subject.</li>
+<li>Done!</li>
 </ol>
+<p>Things to consider: </p>
+<ul>
+<li>Hooks? Here’s <a href="https://michael.stapelberg.ch/posts/2019-07-20-hooks-and-triggers/">an article</a> on the subject.
+<ul>
+<li>Packages with hooks can’t be installed in parallel with other packages.</li>
+<li>Hooks present many downsides, but having package manager triggers don’t seem any better. The alternative would be to have the package manager hardcode a pre-set list of actions, but I don’t see how this would improve the primary downside: an interruption to installation.</li>
+</ul>
+</li>
+<li>Installing an individual package?
+<ul>
+<li>The mainstream approach is archive extraction. This would be a bit slow, wouldn’t it? Would it be possible to download files directly to the machine? Wouldn’t this increase download times despite lowering processor time? Perhaps a disk image would work instead? But how would you use it after mounting it, and wouldn’t this lead to the same problem of increasing download times if the disk image is bigger than an archive?</li>
+</ul>
+</li>
+<li>Keeping track of installed packages?
+<ul>
+<li>Binary serialization using <a href="https://crates.io/crates/bincode"><code>bincode</code></a></li>
+</ul>
+</li>
+</ul>
 
                     </div>
                 </article>
