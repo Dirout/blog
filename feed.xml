@@ -311,8 +311,8 @@ When those in the position to represent the people do not, but instead represent
 </author>
 <title>Notes - Package manager</title>
 <link href="https://Dirout.github.io/blog/posts/2021/05/09/notes-package-manager/index.html"/>
-<pubdate>Sun, 09 May 2021 17:47:43 +0000</pubdate>
-<updated>Sun, 09 May 2021 17:47:43 +0000</updated>
+<pubdate>Sun, 09 May 2021 17:50:04 +0000</pubdate>
+<updated>Sun, 09 May 2021 17:50:04 +0000</updated>
 <id>https://Dirout.github.io/blog/posts/2021/05/09/notes-package-manager/index.html</id>
 <content type="html">&lt;p&gt;Package manager:&lt;/p&gt;
 &lt;ul&gt;
@@ -343,8 +343,11 @@ When those in the position to represent the people do not, but instead represent
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;Decide order of dependency installation
-- Some can be installed in parallel
-- It appears the best algorithm for this would be a topological sort? Not sure what that is yet&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;Some can be installed in parallel&lt;/li&gt;
+&lt;li&gt;It appears the best algorithm for this would be a topological sort? Not sure what that is yet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Done!&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3&gt;Things to consider&lt;/h3&gt;
