@@ -311,8 +311,8 @@ When those in the position to represent the people do not, but instead represent
 </author>
 <title>Notes - Package manager</title>
 <link href="https://Dirout.github.io/blog/posts/2021/05/09/notes-package-manager/index.html"/>
-<pubdate>Sun, 09 May 2021 17:41:09 +0000</pubdate>
-<updated>Sun, 09 May 2021 17:41:09 +0000</updated>
+<pubdate>Sun, 09 May 2021 17:42:43 +0000</pubdate>
+<updated>Sun, 09 May 2021 17:42:43 +0000</updated>
 <id>https://Dirout.github.io/blog/posts/2021/05/09/notes-package-manager/index.html</id>
 <content type="html">&lt;p&gt;Package manager:&lt;/p&gt;
 &lt;ul&gt;
@@ -325,10 +325,8 @@ When those in the position to represent the people do not, but instead represent
 &lt;li&gt;Attempt to get list of dependencies
 1. Outcome one: No dependencies (continue)
 2. Outcome two: Impossible situation (error)
-3. Outcome three: Dependency list satisfied (continue)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;It appears using a SAT solver would be best. Only one problem … I can’t understand how to use it or what exactly one does.
+3. Outcome three: Dependency list satisfied (continue)
+- It appears using a SAT solver would be best. Only one problem … I can’t understand how to use it or what exactly one does.
 &lt;ul&gt;
 &lt;li&gt;Things I’ve looked at:
 &lt;ol&gt;
@@ -338,8 +336,6 @@ When those in the position to represent the people do not, but instead represent
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol start=&quot;2&quot;&gt;
 &lt;li&gt;Decide order of dependency installation
 - Some can be installed in parallel
 - It appears the best algorithm for this would be a topological sort? Not sure what that is yet&lt;/li&gt;
