@@ -5,7 +5,7 @@ permalink: /{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month
   }}/{{ page.date.day }}/{{ page.name }}/index.html
 title: Summer project ideas
 author: em
-date: 2021-05-16T12:00:46+00:00
+date: 2021-05-16T12:14:08+00:00
 tags:
   - micro
 markdown: true
