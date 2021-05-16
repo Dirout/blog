@@ -1,0 +1,33 @@
+---
+layout: post
+collection: posts
+permalink: /{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month
+  }}/{{ page.date.day }}/{{ page.name }}/index.html
+title: Summer project ideas
+author: em
+date: 2021-05-16T12:00:46+00:00
+tags:
+  - micro
+markdown: true
+---
+Things to work on over the summer:
+- Dokkoo and Mokk
+    - Distribution
+    - Rename `layout` to `template`
+    - Look into rewriting code for performance
+- Cards (operating system)
+    - `gany` package manager
+    - Use Clear Linux kernel for Intel users
+    - Use standard Linux kernel otherwise
+    - Core applications built in GTK
+        - Oku
+        - Store
+            - No packages, all apps are free Flatpaks (though user can choose to donate to author with a small percentage going to OS)
+        - Letter
+            - Encrypted, anonymous chat app (preferably P2P as well)
+- Populi (open-authored magazine)
+    - Finish web interface
+- Statusquorum (report on Congress members)
+    - Promote progressive candidates and incumbents, show breakdowns on political stances/issues per politician
+- Work on Store with Ev
+- Announce projects online, make everything presentable, open-source and start taking donations once eighteen years old
