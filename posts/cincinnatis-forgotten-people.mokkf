@@ -1,0 +1,42 @@
+---
+layout: post
+collection: posts
+permalink: /{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month
+  }}/{{ page.date.day }}/{{ page.name }}/index.html
+title: Cincinnati's Forgotten People
+author: em
+date: 2020-03-25T20:00:00+00:00
+tags:
+  - ramble
+markdown: true
+---
+***
+
+# A foreword
+
+This essay was originally written when I was a young teenager in high school, with a very undeveloped brain. While the original leftist, anti-capitalist sentiment expressed in the essay is one I continue to agree with, I have not re-evaluated whether my proposed solutions would be effective, correct, or even sensible. If some parts of this essay seem like pure nonsense to you, they probably are.
+
+***
+	
+Although hardly discussed, mentioned, or known, Cincinnati has a homeless problem. The problem isn’t the homeless, but our city’s response, or lack thereof, to the many children and families left without basic shelter. Just under two years ago, Third Street was flooded with the struggling, a poor & huddled mass that this country was built to ensure would no longer exist. The city’s response? Declare them a health issue and evict them from even the streets.
+	
+To give some understanding of the scale we’re dealing with, Cincinnati has 68.014% of Ohio’s homeless, yet the city accounts for only 2.589% of the state’s population (“Homeless in Ohio Statistics 2018”, “Who Is Homeless in Cincinnati? The Answer May Surprise You”, “U.S. Census Bureau QuickFacts: Ohio; United States”, “U.S. Census Bureau QuickFacts: Cincinnati City, Ohio”). Quite frankly, that’s absurd, and something has to be done. One in four of our homeless are children. Our children are our future, and yet they’ve been abandoned, forgotten, and left without hope. We’re already a city that’s past its glory days of being the “Paris of America,” and we continue to turn a blind eye to such injustice with the apathy of a metropolis?
+	
+We need a city council that’s willing to do its job and save the people it’s meant to serve from the crippling poverty we’ve let grow like a cancer. We need officials in the Cincinnati City Council that will enact effective, common-sense reforms that would protect the working class and the homeless from the big financial interests and county officials that’ve actively contributed to the harm done against the people. Not only do we need to reduce the number of people in poverty, but we need to prevent more from ending up without a home.
+	
+We need an Emergency Rental Assistance Program, providing short term financial assistance for rent and utilities as the cost of living for the average American rises higher and higher, 14% from 2015 to 2018, to ensure people don’t lose their homes when they struggle to make ends meet, living paycheck-to-paycheck in constant worry that their children won’t have enough to eat (Huddleston). We need permanent supportive housing, publicly housing with support networks of professionals, to reintroduce families back into the economy quickly, efficiently, and safely, revitalizing our industries and saving lives. These are common sense, bipartisan reforms that’ve proven successful in cities such as Chicago and New York, where the problems they face are far greater. If they can do it, we can.
+	
+We’ve got abandoned subway tunnels and stations that still continue to get tax dollars for upkeep, serving no purpose (Hawkins). If we’re already spending money to maintain them, why not turn our biggest failure as a city into our biggest success? Turn these tunnels and stations into homeless shelters, food banks, soup kitchens, rehab centres, the services the City of Cincinnati desperately needs.
+It won’t be easy, and it won’t be quick, but it would be better than the nothing we’re doing right now. If these reforms only cut our homeless population down to 75% of what it is today, that still means countless families are given their lives back, those still in poverty would have access to basic food and shelter, and addicts looking to turn their lives around could get the help they need. It’ll be a cleaner Cincinnati, a safer Cincinnati, a richer Cincinnati: a Cincinnati to be proud of.
+
+Sources\
+Hawkins, Andrew J. “The Secret History of Cincinnati's Ghost Subway.” The Verge, Vox Media, 10 Aug. 2016, www.theverge.com/2016/8/10/12411632/public-transportation-failures-america-cincinnati-subway. Journalist Andrew Hawkins examines the history of the abandoned Cincinnati Subway system, noting its present state and continued upkeep despite its abandonment, serving as a popular destination for urban explorers and the homeless.\
+“Homeless in Ohio Statistics 2018.” Homeless Estimation by State, US Interagency Council on Homelessness, www.usich.gov/homelessness-statistics/oh/. The US Interagency Council on Homelessness finds 10,345 people were continuously homeless year-round, comprising 999 families and including 676 veterans. The statistics also include data from the US Department of Education, showing 34,180 public school students experienced homelessness over the course of the year.\
+Huddleston, Cameron. “Unemployment Is Low, Wages Are Up - But Cost of Living in America Keeps Rising.” GOBankingRates, GOBankingRates, 4 Feb. 2020, www.gobankingrates.com/money/economy/rising-cost-of-living-in-america/. Despite the rise in wages and lowering unemployment, the cost of living across the United States continues to rise steadily, finance publication GOBankingRates finds, claiming the cost of living rose 14% between 2015 and 2018.\
+May, Lucy. “Officials: Homeless Camps Banned in Hamilton Co.” WCPO, E. W. Scripps Company, 20 Aug. 2018, www.wcpo.com/news/local-news/hamilton-county/cincinnati/homeless-camp-must-leave-private-lot-in-otr-prosecutor-says.\
+“Officials to Evacuate Homeless Camp Today.” WCPO, E. W. Scripps Company, 3 Aug. 2018, www.wcpo.com/news/local-news/hamilton-county/cincinnati/downtown/efforts-to-clear-out-third-street-homeless-camp-draw-debate.\
+“Proven Solutions.” Coalition For The Homeless, www.coalitionforthehomeless.org/proven-solutions/. The nation’s oldest advocacy and direct service organization aiding the homeless, the Coalition for the Homeless, has historically promoted effective reforms in New York City, such as federal housing assistance, permanent supportive housing, and a “housing first” policy. These reforms have proven massively effective in a city with one of the largest homeless populations in the developed world.\
+Rosenstiel, Sam. “Homeless Camp beneath Overpass Cleared out, Fenced off. Where Did the Homeless Go?” Cincinnati.com, Cincinnati Enquirer, 25 July 2018, www.cincinnati.com/story/news/2018/07/25/city-clears-out-overpass-homeless-camp-near-third-street/832977002/.\
+“U.S. Census Bureau QuickFacts: Cincinnati City, Ohio.” Census Bureau QuickFacts, United States Census Bureau, www.census.gov/quickfacts/cincinnaticityohio.\
+“U.S. Census Bureau QuickFacts: Ohio; United States.” Census Bureau QuickFacts, United States Census Bureau, www.census.gov/quickfacts/fact/table/OH,US/PST045219.\
+“Who Is Homeless in Cincinnati? The Answer May Surprise You.” Strategies to End Homelessness, Strategies to End Homelessness, 11 Feb. 2020, www.strategiestoendhomelessness.org/who-is-homeless/. Cincinnati-based homeless advocacy group, Strategies to End Homelessness, has found that 7,036 individuals in Cincinnati are homeless. Of that total, 25% are children, and 36% are young adults under the age of 25.
