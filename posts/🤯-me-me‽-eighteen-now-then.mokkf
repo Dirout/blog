@@ -1,0 +1,19 @@
+---
+layout: post
+collection: posts
+permalink: /{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month
+  }}/{{ page.date.day }}/{{ page.name }}/index.html
+title: 🤯 Me (ME‽) @ Eighteen NOW (then)
+author: em
+date: 2021-06-01T22:45:34+00:00
+tags:
+  - micro
+markdown: true
+---
+My God, I'm going to be eighteen whole gosh-diddly-darned years old on the second day of June in the year 2021 of this here Common Era.
+
+The future is just waiting to be lived, huh?
+
+Hoping it goes well.
+
+Groovy. 
