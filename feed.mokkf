@@ -6,7 +6,7 @@ permalink: "/feed.xml"
 
 <feed xmlns="http://www.w3.org/2005/Atom">
 <title>{{ global.title }}</title>
-<link href="{{ global.url }}/atom.xml" rel="self"/>
+<link href="{{ global.url }}/feed.xml" rel="self"/>
 <link href="{{ global.url }}/"/>
 <id>{{ global.url }}</id>
 
@@ -17,10 +17,10 @@ permalink: "/feed.xml"
 <email>{{ global.authors[post.data.author].email }}</email>
 </author>
 <title>{{ post.data.title }}</title>
-<link href="{{ global.url }}{{ post.url }}"/>
+<link href="{{ post.url | remove: 'index.html' | prepend: global.url }}"/>
 <pubdate>{{ post.date.rfc_2822 }}</pubdate>
 <updated>{{ post.date.rfc_2822 }}</updated>
-<id>{{ global.url }}{{ post.url }}</id>
+<id>{{ post.url | remove: 'index.html' | prepend: global.url }}</id>
 <content type="html">{{ post.content | escape }}</content>
 </entry>
 {% endfor %}

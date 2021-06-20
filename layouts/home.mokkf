@@ -16,7 +16,7 @@ markdown: false
 <article class="post-item">
     <span class="post-item-date">{{ post.date.i_day }} {{ post.date.long_month }} {{ post.date.year }}</span>
     <h4 class="post-item-title">
-        <a href="{{ post.url | prepend: global.url }}">{{ post.data.title | escape }}</a>
+        <a href="{{ post.url | remove: 'index.html' | prepend: global.url }}">{{ post.data.title | escape }}</a>
     </h4>
 </article>
             {% endunless %}

@@ -33,7 +33,7 @@ markdown: false
             {%- endunless -%}
 <article class="post-item">
     <h3 class="post-item-title">
-        <a href="{{ post.url | prepend: global.url }}">{% if post.data.tags contains "draft" %}<span class="post-updated-at post-meta">DRAFT</span> {% endif %}{{ post.data.title | escape }}</a>
+        <a href="{{ post.url | remove: 'index.html' | prepend: global.url }}">{% if post.data.tags contains "draft" %}<span class="post-updated-at post-meta">DRAFT</span> {% endif %}{{ post.data.title | escape }}</a>
     </h3>
 </article>
       {% endunless %}

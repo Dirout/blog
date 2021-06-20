@@ -7,7 +7,7 @@ markdown: false
     {
       "title"    : "{{ post.data.title | escape }}",
       "tags"     : "{{ post.data.tags | join: ', ' }}",
-      "url"      : "{{ global.url }}{{ post.url }}",
+      "url"      : "{{ post.url | remove: 'index.html' | prepend: global.url }}",
       "date"     : "{{ post.date.rfc_3339 }}"
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
