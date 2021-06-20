@@ -8,6 +8,7 @@ author: em
 date: 2021-06-19T00:00:00+00:00
 tags:
   - micro
+  - ramble
 markdown: true
 ---
 ![Happy birthday, Evan!]({{ global.url }}/assets/img/uploads/poster.png)
