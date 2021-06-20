@@ -25,21 +25,21 @@ markdown: false
   {% assign post_date_rfc_3339 = collections["posts"] | map: 'date' | sort: "rfc_3339" %}
   {%- for post_date in post_date_rfc_3339 reversed -%}
     {%- for post in collections["posts"] -%}
-      {% if post.date.rfc_3339 == post_date.rfc_3339 %}
-        {% unless urls contains post.url %}
+      {%- if post.date.rfc_3339 == post_date.rfc_3339 -%}
+        {%- unless urls contains post.url -%}
           {% assign urls = urls | push: post.url %}
-            {% if post.data.tags %}
-              {% if post.data.tags contains tag %}
+            {%- if post.data.tags -%}
+              {%- if post.data.tags contains tag -%}
 <article class="post-item" id="results-container">
   <span class="post-item-date">{{ post.date.i_day }} {{ post.date.long_month }} {{ post.date.year }}</span>
   <h3 class="post-item-title">
     <a href="{{ post.url | remove: 'index.html' | prepend: global.url }}">{% if post.data.tags contains "draft" %}<span class="post-updated-at post-meta">DRAFT</span> {% endif %}{{ post.data.title | escape }}</a>
   </h3>
 </article>
-              {% endif %}
-            {% endif %}
-        {% endunless %}
-      {% endif %}
+              {%- endif -%}
+            {%- endif -%}
+        {%- endunless -%}
+      {%- endif -%}
     {%- endfor -%}
   {%- endfor -%}
 {%- endfor -%}

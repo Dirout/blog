@@ -9,6 +9,6 @@ markdown: false
       "tags"     : "{{ post.data.tags | join: ', ' }}",
       "url"      : "{{ post.url | remove: 'index.html' | prepend: global.url }}",
       "date"     : "{{ post.date.rfc_3339 }}"
-    } {% unless forloop.last %},{% endunless %}
+    } {%- unless forloop.last -%},{%- endunless -%}
   {% endfor %}
 ]
