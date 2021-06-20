@@ -10,17 +10,17 @@ markdown: false
   <a class="tag-item" href="#">all</a>
   {% assign tags = global.tags | sort_natural %}
   {%- for tag in tags -%}
-    {% capture name %}{{ tag | first }}{% endcapture %}
+    {% capture name %}{{ tag }}{% endcapture %}
 
-  <a class="tag-item" href="#{{name}}">{{ name }}</a>
+  <a class="tag-item" href="#{{ name | downcase | strip | slugify }}">{{ name }}</a>
   {%- endfor -%}
 
 </div>
 
 {%- for tag in tags -%}
-  {%- capture name -%}{{ tag | first }}{%- endcapture -%}
+  {%- capture name -%}{{ tag }}{%- endcapture -%}
 
-<h2 id="{{ name }}">{{ name | upcase }}</h2>
+<h2 id="{{ name | downcase | strip | slugify }}">{{ name | upcase }}</h2>
   {% assign urls = '' | split: '' %}
   {% assign post_date_rfc_3339 = collections["posts"] | map: 'date' | sort: "rfc_3339" %}
   {%- for post_date in post_date_rfc_3339 reversed -%}

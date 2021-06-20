@@ -35,7 +35,7 @@ markdown: false
                             {% assign tags = page.data.tags | sort_natural %}
                             <span itemprop="keywords">
                                 {% for tag in tags %}
-                                <a class="tag" href="{{ global.url }}/tags#{{tag | downcase | slugify}}">{{tag | upcase }}</a>{% unless forloop.last %},{% endunless %} {% endfor %}
+                                <a class="tag" href="{{ global.url }}/tags#{{ tag | downcase | strip | slugify }}">{{ tag | upcase }}</a>{% unless forloop.last %},{% endunless %} {% endfor %}
                             </span>
                         </div>
                         {% endif %}
