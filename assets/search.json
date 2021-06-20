@@ -64,6 +64,13 @@
     } ,
   
     {
+      "title"    : "Messages to Evan: Away from Home",
+      "tags"     : "micro, ramble",
+      "url"      : "https://Dirout.github.io/blog/posts/2021/06/19/messages-to-evan-away-from-home/index.html",
+      "date"     : "2021-06-19T23:35:00+00:00"
+    } ,
+  
+    {
       "title"    : "Quick notes on package managers",
       "tags"     : "micro",
       "url"      : "https://Dirout.github.io/blog/posts/2021/05/09/notes-package-manager/index.html",
