@@ -19,16 +19,24 @@ markdown: false
 <ul id="search-results"></ul>
 
 {%- assign previous_year = 0 -%}
-{% assign posts_by_date = collections["posts"] | sort: "url" %}
-{%- for post in posts_by_date reversed -%}
-  {%- capture current_year -%}{{ post.date.year }}{%- endcapture -%}
-  {%- unless current_year == previous_year -%}
+{% assign urls = '' | split: '' %}
+{% assign post_date_rfc_3339 = collections["posts"] | map: 'date' | sort: "rfc_3339" %}
+{%- for post_date in post_date_rfc_3339 reversed -%}
+  {%- for post in collections["posts"] -%}
+    {% if post.date.rfc_3339 == post_date.rfc_3339 %}
+      {% unless urls contains post.url %}
+        {% assign urls = urls | push: post.url %}
+            {%- capture current_year -%}{{ post.date.year }}{%- endcapture -%}
+            {%- unless current_year == previous_year -%}
 <h2>{{ current_year }}</h2>
-    {%- assign previous_year = current_year -%}
-  {%- endunless -%}
+                {%- assign previous_year = current_year -%}
+            {%- endunless -%}
 <article class="post-item">
     <h3 class="post-item-title">
         <a href="{{ post.url | prepend: global.url }}">{% if post.data.tags contains "draft" %}<span class="post-updated-at post-meta">DRAFT</span> {% endif %}{{ post.data.title | escape }}</a>
     </h3>
 </article>
+      {% endunless %}
+    {% endif %}
+  {%- endfor -%}
 {%- endfor -%}

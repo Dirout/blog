@@ -5,14 +5,22 @@ author: both
 markdown: false
 ---
 <h3 class="posts-item-note" aria-label="Posts">Posts</h3>
-{% assign posts_by_date = collections["posts"] | sort: "url" %}
-{%- for post in posts_by_date reversed -%}
-{% unless post.data.tags contains "draft" %}
+{% assign urls = '' | split: '' %}
+{% assign post_date_rfc_3339 = collections["posts"] | map: 'date' | sort: "rfc_3339" %}
+{%- for post_date in post_date_rfc_3339 reversed -%}
+  {%- for post in collections["posts"] -%}
+    {% if post.date.rfc_3339 == post_date.rfc_3339 %}
+      {% unless urls contains post.url %}
+        {% assign urls = urls | push: post.url %}
+            {% unless post.data.tags contains "draft" %}
 <article class="post-item">
     <span class="post-item-date">{{ post.date.i_day }} {{ post.date.long_month }} {{ post.date.year }}</span>
     <h4 class="post-item-title">
         <a href="{{ post.url | prepend: global.url }}">{{ post.data.title | escape }}</a>
     </h4>
 </article>
-{% endunless %}
+            {% endunless %}
+      {% endunless %}
+    {% endif %}
+  {%- endfor -%}
 {%- endfor -%}
