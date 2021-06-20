@@ -352,7 +352,14 @@
         <a href="https://github.com/dirout/blog" target="_blank" rel="noreferrer noopener">Mousehole</a>
     </small>
 </footer>
-<script src="https://Dirout.github.io/blog/assets/js/main.js" defer="defer"></script>
+<script src="https://Dirout.github.io/blog/assets/js/main.js" defer="defer"></script><script src="https://Dirout.github.io/blog/assets/js/search.min.js"></script>
+<script>
+    var search = KliseSearch({
+        searchInput: document.getElementById("search-input"),
+        resultsContainer: document.getElementById("search-results"),
+        json: "https://Dirout.github.io/blog/assets/search.json",
+    });
+</script>
         </div>
     </body>
 </html>
