@@ -4,7 +4,7 @@ collection: posts
 permalink: /{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month
   }}/{{ page.date.day }}/{{ page.name }}/index.html
 title: "Messages to Evan: Away from Home"
-author: em
+author: Em
 date: 2021-06-19T23:35:00+00:00
 tags:
   - micro

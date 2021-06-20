@@ -4,7 +4,7 @@ collection: posts
 permalink: /{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month
   }}/{{ page.date.day }}/{{ page.name }}/index.html
 title: Quick notes on package managers
-author: em
+author: Em
 date: 2021-05-09T17:50:47+00:00
 tags:
   - micro

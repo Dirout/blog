@@ -4,7 +4,7 @@ collection: posts
 permalink: /{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month
   }}/{{ page.date.day }}/{{ page.name }}/index.html
 title: Cincinnati's Forgotten People
-author: em
+author: Em
 date: 2020-03-25T12:00:00+00:00
 tags:
   - ramble

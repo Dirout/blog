@@ -15,33 +15,25 @@ menus:
     url: https://Dirout.github.io/blog/
     external: false
   - title: archive
-    url: https://Dirout.github.io/blog/archive.html
+    url: https://Dirout.github.io/blog/archive
     external: false
   - title: about
-    url: https://Dirout.github.io/blog/about.html
+    url: https://Dirout.github.io/blog/about
     external: false
 authors:
-  em:
+  Em:
     name: Em Sayahi
     bio: >-
       A wacky little kitty cat.
-    username: emilsayahi
-    github: Dirout
     email: limesayahi@gmail.com
-    avatar: https://Dirout.github.io/blog/assets/img/avatar.png
-  evan:
+  Evan:
     name: Evan Gabriel Burke
     bio: >-
       A funny little dancing rodent.
-    username: evanb619
-    github: evanb619
     email: evanburke619@gmail.com
-    avatar: https://Dirout.github.io/blog/assets/img/avatar.png
-  both:
+  Both:
     name: Mousehole
     bio: >-
       Musings from the mice
-    username: mousehole
-    github: Dirout
-    email: limesayahi@gmail.com
+    email: 32737166+EmmyGH@users.noreply.github.com
     avatar: https://Dirout.github.io/blog/assets/img/avatar.png

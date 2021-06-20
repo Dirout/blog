@@ -1,9 +1,9 @@
 ---
 title: "About"
 layout: page
-permalink: "/about.html"
+permalink: "/about/index.html"
 collection: "pages"
-author: both
+author: Both
 ---
 
 Welcome to our blog!\

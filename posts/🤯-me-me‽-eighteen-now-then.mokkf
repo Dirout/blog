@@ -4,7 +4,7 @@ collection: posts
 permalink: /{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month
   }}/{{ page.date.day }}/{{ page.name }}/index.html
 title: 🤯 Me (ME‽) @ Eighteen NOW (then)
-author: em
+author: Em
 date: 2021-06-01T22:45:34+00:00
 tags:
   - micro

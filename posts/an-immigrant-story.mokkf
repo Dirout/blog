@@ -4,7 +4,7 @@ collection: posts
 permalink: /{{ page.data.collection }}/{{ page.date.year }}/{{ page.date.month
   }}/{{ page.date.day }}/{{ page.name }}/index.html
 title: An Immigrant Story
-author: em
+author: Em
 date: 2021-05-02T17:23:42+00:00
 tags:
   - ramble

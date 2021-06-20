@@ -1,7 +1,7 @@
 ---
 layout: default
 home: true
-author: both
+author: Both
 markdown: false
 ---
 <h3 class="posts-item-note" aria-label="Posts">Posts</h3>
