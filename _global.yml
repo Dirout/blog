@@ -1,5 +1,5 @@
 locale: "en_US"
-url: "https://Dirout.github.io/blog"
+url: "https://dirout.github.io/blog"
 title: "Mousehole"
 description: "Musings from the mice"
 image: /assets/img/ogp.png
@@ -12,13 +12,13 @@ tags:
   - "micro"
 menus:
   - title: home
-    url: https://Dirout.github.io/blog/
+    url: https://dirout.github.io/blog/
     external: false
   - title: archive
-    url: https://Dirout.github.io/blog/archive
+    url: https://dirout.github.io/blog/archive
     external: false
   - title: about
-    url: https://Dirout.github.io/blog/about
+    url: https://dirout.github.io/blog/about
     external: false
 authors:
   Em:
@@ -36,4 +36,4 @@ authors:
     bio: >-
       Musings from the mice
     email: 32737166+EmmyGH@users.noreply.github.com
-    avatar: https://Dirout.github.io/blog/assets/img/avatar.png
+    avatar: https://dirout.github.io/blog/assets/img/avatar.png
