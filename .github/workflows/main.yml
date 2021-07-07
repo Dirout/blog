@@ -40,14 +40,14 @@ jobs:
           shopt -s globstar
           for f in ./mokk/output/**/*.html
           do
-            escapedpath="${f// /\}"
-            fullpath="$(f $escapedpath)"
-            fullminpath="${fullpath/output/min}"
+            escapedpath=$(printf %q "$f")
+            fullpath="$(realpath escapedpath)"
+            fullminpath='${fullpath/output/min}'
             echo $escapedpath
             echo $fullpath
             echo $fullminpath
             install -D /dev/null $fullminpath
-            sudo ./minify-html -s '$fullpath' -o '$fullminpath' --css --js
+            sudo ./minify-html -s $fullpath -o $fullminpath --css --js
           done
     - name: Prepare
       run: |
