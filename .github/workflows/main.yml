@@ -38,11 +38,11 @@ jobs:
           curl -s -L https://wilsonl.in/minify-html/bin/${version}-linux-x86_64 --output minify-html > /dev/null
           chmod +x ./minify-html
           shopt -s globstar
-          for f in ./mokk/output/**/*
+          for f in ./mokk/output/**/*.html
           do
             echo $f
             echo "${f/output/min}"
-            ./minify-html -s $f -o "${f/output/min}" --css --js
+            sudo ./minify-html -s $f -o "${f/output/min}" --css --js
           done
     - name: Prepare
       run: |
