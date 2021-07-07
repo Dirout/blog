@@ -43,10 +43,12 @@ jobs:
             workingdir=$(pwd)
             quotedpath=$(echo '"'$f'"')
             minpath=${quotedpath/output/min}
-            echo $workingdir/$quotedpath
-            echo $workingdir/$minpath
-            install -D /dev/null $minpath
-            sudo ./minify-html -s $workingdir/$quotedpath -o $workingdir/$minpath --css --js
+            wdquote=${quotedpath/./workingdir}
+            wdmin=${minpath/./workingdir}
+            echo $wdquote
+            echo $wdmin
+            install -D /dev/null $wdmin
+            sudo ./minify-html -s $wdquote -o $wdmin --css --js
           done
     - name: Prepare
       run: |
