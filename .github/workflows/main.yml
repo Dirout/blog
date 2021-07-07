@@ -40,14 +40,13 @@ jobs:
           shopt -s globstar
           for f in ./mokk/output/**/*.html
           do
-            pwd
+            workingdir=$(pwd)
             quotedpath=$(echo '"'$f'"')
-            fullpath=$(realpath $quotedpath)
             minpath=${quotedpath/output/min}
-            echo $fullpath
-            echo $minpath
+            echo $workingdir/$quotedpath
+            echo $workingdir/$minpath
             install -D /dev/null $minpath
-            sudo ./minify-html -s $quotedpath -o $minpath --css --js
+            sudo ./minify-html -s $workingdir/$quotedpath -o $workingdir/$minpath --css --js
           done
     - name: Prepare
       run: |
