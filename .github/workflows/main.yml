@@ -38,16 +38,35 @@ jobs:
           curl -s -L https://wilsonl.in/minify-html/bin/${version}-linux-x86_64 --output minify-html > /dev/null
           chmod +x ./minify-html
           shopt -s globstar
+          
           for f in ./mokk/output/**/*.html
           do
             workingdir=$(pwd)
             minpath=${f/output/min}
             wdout=${f/./$workingdir}
             wdmin=${minpath/./$workingdir}
-            echo $wdout
-            echo $wdmin
             install -D /dev/null "$wdmin"
             sudo ./minify-html -s "$wdout" -o "$wdmin" --css --js
+          done
+          
+          for f in ./mokk/output/**/*.css
+          do
+            workingdir=$(pwd)
+            minpath=${f/output/min}
+            wdout=${f/./$workingdir}
+            wdmin=${minpath/./$workingdir}
+            install -D /dev/null "$wdmin"
+            sudo ./minify-html -s "$wdout" -o "$wdmin" --css
+          done
+          
+          for f in ./mokk/output/**/*.js
+          do
+            workingdir=$(pwd)
+            minpath=${f/output/min}
+            wdout=${f/./$workingdir}
+            wdmin=${minpath/./$workingdir}
+            install -D /dev/null "$wdmin"
+            sudo ./minify-html -s "$wdout" -o "$wdmin" --js
           done
     - name: Prepare
       run: |
