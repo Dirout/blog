@@ -40,10 +40,10 @@ jobs:
           shopt -s globstar
           for f in ./mokk/output/**/*.html
           do
-            
-            fullpath=$(realpath "${f/output/min}")
-            echo fullpath
-            sudo ./minify-html -s $f -o $fullpath --css --js
+            fullpath=$(realpath $f)
+            fullminpath="${fullpath/output/min}"
+            echo fullminpath
+            sudo ./minify-html -s $fullpath -o $fullminpath --css --js
           done
     - name: Prepare
       run: |
