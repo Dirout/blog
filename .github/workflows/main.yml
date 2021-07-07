@@ -52,6 +52,7 @@ jobs:
     - name: Prepare
       run: |
           cp -ar ./mokk/min/* ./gh-pages
+          cp -anr ./mokk/output/* ./gh-pages
           if [ -f "./mokk/postbuild.sh" ]; then
               chmod +x ./mokk/postbuild.sh && ./mokk/postbuild.sh
           fi
