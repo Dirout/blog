@@ -44,8 +44,6 @@ jobs:
             minpath=${f/output/min}
             wdout=${f/./$workingdir}
             wdmin=${minpath/./$workingdir}
-            echo $wdout
-            echo $wdmin
             install -D /dev/null "$wdmin"
             sudo ./minify-html -s "$wdout" -o "$wdmin" --css --js
           done
@@ -56,6 +54,7 @@ jobs:
           if [ -f "./mokk/postbuild.sh" ]; then
               chmod +x ./mokk/postbuild.sh && ./mokk/postbuild.sh
           fi
+          sudo ./minify-html -s "./gh-pages/assets/css/style.css" -o "./gh-pages/assets/css/style.css" --css
           touch ./gh-pages/.nojekyll
           tee -a ./gh-pages/.nojekyll > /dev/null <<EOT
 
