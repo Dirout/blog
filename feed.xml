@@ -303,6 +303,64 @@ It won’t be easy, and it won’t be quick, but it would be better than the not
 <name>Em Sayahi</name>
 <email>limesayahi@gmail.com</email>
 </author>
+<title>Important considerations for a future package manager</title>
+<link href="https://dirout.github.io/blog/posts/2021/07/06/important-considerations-for-a-future-package-manager/"/>
+<pubdate>Tue, 06 Jul 2021 23:53:00 +0000</pubdate>
+<updated>Tue, 06 Jul 2021 23:53:00 +0000</updated>
+<id>https://dirout.github.io/blog/posts/2021/07/06/important-considerations-for-a-future-package-manager/</id>
+<content type="html">&lt;hr /&gt;
+&lt;h4&gt;A foreword&lt;/h4&gt;
+&lt;p&gt;This is my initial draft of &lt;a href=&quot;https://github.com/Dirout/gany/discussions/5#discussion-3448930&quot;&gt;a GitHub discussion&lt;/a&gt; concerning what a future system package manager would look like. If you’re considering writing your own, I highly urge you read &amp;amp; consider what I have to say&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Vocabulary&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Package — a unit of shared software&lt;/li&gt;
+&lt;li&gt;Repository — a collection of packaged software&lt;/li&gt;
+&lt;li&gt;Distribution — a repository of software which is distributed to others&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Concepts&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Delta_encoding&quot;&gt;Delta encoding&lt;/a&gt; — updating data by getting only the differences, as opposed to retrieving a whole new copy of a file
+&lt;ul&gt;
+&lt;li&gt;Updating a package’s local data from a remote repository would use less bandwidth with this technique&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Multi-versioned packages — dropping &lt;a href=&quot;https://research.swtch.com/version-sat&quot;&gt;the assumption that only one version of a package may be installed at once&lt;/a&gt;, minimising &lt;a href=&quot;https://en.wikipedia.org/wiki/Dependency_hell&quot;&gt;dependency hell&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Separation of package metadata — if a package does not come bundled with its own metadata, then getting a package’s information from a remote source will not require downloading a package itself
+&lt;ul&gt;
+&lt;li&gt;Additionally, the file size of the package itself will be reduced&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Separate hierarchies &amp;amp; exchange directories — packages are separated from the rest of the file system, which will create less clutter and sources of conflict (such as from two packages providing a file with the same path and name)
+&lt;ul&gt;
+&lt;li&gt;Exchange directories may be global (such as &lt;code&gt;share&lt;/code&gt;), so as to maintain compatibility with the &lt;a href=&quot;https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard&quot;&gt;Filesystem Hierarchy Standard&lt;/a&gt;, or inter-package, for situations where one package may act as a plugin for another one&lt;/li&gt;
+&lt;li&gt;A separate hierarchy for packages will also ensure that a user’s kernel &amp;amp; userland remains untouched, reducing the risk of system failure&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://ftp.rpm.org/max-rpm/s1-rpm-inside-files-list-directives.html#S3-RPM-INSIDE-FLIST-GHOST-DIRECTIVE&quot;&gt;Ghost files&lt;/a&gt; — software often produces files during its use, such as log files, state files, index files, and the sort. Such files should remain associated with the software’s package so they can be removed along with the rest of the software&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Considerations&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Hooks and triggers
+&lt;ul&gt;
+&lt;li&gt;Without hooks or triggers, &lt;a href=&quot;https://michael.stapelberg.ch/posts/2019-07-20-hooks-and-triggers/#hooks-preclude-concurrent-package-installation&quot;&gt;concurrent package installation becomes much more possible&lt;/a&gt;. Several major package managers &lt;a href=&quot;https://michael.stapelberg.ch/posts/2019-08-17-linux-package-managers-are-slow/#current-landscape&quot;&gt;only use post-install hooks&lt;/a&gt;, and those can be &lt;a href=&quot;https://src.fedoraproject.org/rpms/openssh/blob/30922f629cc135e3233e263d5e3eb346f9251c4e/f/sshd-keygen%40.service&quot;&gt;replaced with services&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;While many would object to leaning on configuring an initialisation system instead of using hooks, particularly when many object with &lt;code&gt;systemd&lt;/code&gt; as a whole (often due to its association with Lennart Poettering and &lt;a href=&quot;http://0pointer.net/blog/revisiting-how-we-put-together-linux-systems.html&quot;&gt;the philosophies of the &lt;code&gt;systemd&lt;/code&gt; ‘cabal’ in general&lt;/a&gt;), I must say that I largely agree with them—quite frankly, I don’t give a damn about how you (wrongly) feel about &lt;code&gt;systemd&lt;/code&gt; being ‘bloated’ because the user experience will be improved by relying on it. If the notion of a system daemon scares you, then I don’t know how to even begin to approach you; unless you’re worried about some &lt;a href=&quot;https://wiki.c2.com/?TheKenThompsonHack&quot;&gt;Ken Thompson Bug&lt;/a&gt;-type scenario where &lt;code&gt;systemd&lt;/code&gt; could be exploited, then you cannot be arguing in good faith&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Archives or Images?
+&lt;ul&gt;
+&lt;li&gt;The best contender for an image format would be &lt;a href=&quot;https://en.wikipedia.org/wiki/SquashFS&quot;&gt;SquashFS&lt;/a&gt;. Snap packages utilise it, and they &lt;a href=&quot;https://forum.snapcraft.io/t/squashfs-performance-effect-on-snap-startup-time/13920&quot;&gt;come with a decent performance hit&lt;/a&gt;. While &lt;a href=&quot;https://michael.stapelberg.ch/posts/2019-08-17-linux-package-managers-are-slow/#thought-experiment-further-speed-ups&quot;&gt;using an archive would make package installation faster&lt;/a&gt;, at the end of the day the user is going to care more about their system running slow than whether or not their packages install a tad bit faster&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&quot;https://en.wikipedia.org/wiki/LZ4_(compression_algorithm)&quot;&gt;LZ4 algorithm&lt;/a&gt; would provide the fastest decompression speeds available, ensuring the lowest decompression times possible during installation while also not sacrificing on the runtime performance of packaged software&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+</entry>
+<entry>
+<author>
+<name>Em Sayahi</name>
+<email>limesayahi@gmail.com</email>
+</author>
 <title>Inauguration Day</title>
 <link href="https://dirout.github.io/blog/posts/2021/01/20/inauguration-day/"/>
 <pubdate>Wed, 20 Jan 2021 18:03:00 +0000</pubdate>
