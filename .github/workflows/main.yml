@@ -40,6 +40,7 @@ jobs:
           shopt -s globstar
           for f in ./mokk/output/**/*.html
           do
+            pwd
             quotedpath=$(echo '"'$f'"')
             fullpath=$(realpath $quotedpath)
             minpath=${quotedpath/output/min}
