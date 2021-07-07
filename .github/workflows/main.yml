@@ -40,8 +40,10 @@ jobs:
           shopt -s globstar
           for f in ./mokk/output/**/*.html
           do
-            fullpath=$(realpath '$f')
+            escapedpath="${f// /\}"
+            fullpath="$(f $escapedpath)"
             fullminpath="${fullpath/output/min}"
+            echo $escapedpath
             echo $fullpath
             echo $fullminpath
             install -D /dev/null $fullminpath
