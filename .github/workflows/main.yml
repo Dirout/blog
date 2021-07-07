@@ -40,6 +40,8 @@ jobs:
           shopt -s globstar
           for f in ./mokk/output/**/*
           do
+            echo $f
+            echo "${f/output/min}"
             ./minify-html -s $f -o "${f/output/min}" --css --js
           done
     - name: Prepare
