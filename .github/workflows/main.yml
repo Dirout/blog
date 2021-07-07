@@ -43,8 +43,8 @@ jobs:
             workingdir=$(pwd)
             quotedpath=$(echo '"'$f'"')
             minpath=${quotedpath/output/min}
-            wdquote=${quotedpath/./workingdir}
-            wdmin=${minpath/./workingdir}
+            wdquote=${quotedpath/./$workingdir}
+            wdmin=${minpath/./$workingdir}
             echo $wdquote
             echo $wdmin
             install -D /dev/null $wdmin
