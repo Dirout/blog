@@ -41,14 +41,13 @@ jobs:
           for f in ./mokk/output/**/*.html
           do
             workingdir=$(pwd)
-            quotedpath=$(echo '"'$f'"')
-            minpath=${quotedpath/output/min}
-            wdquote=${quotedpath/./$workingdir}
+            minpath=${f/output/min}
+            wdout=${f/./$workingdir}
             wdmin=${minpath/./$workingdir}
-            echo $wdquote
+            echo $wdout
             echo $wdmin
-            install -D /dev/null $wdmin
-            sudo ./minify-html -s $wdquote -o $wdmin --css --js
+            install -D /dev/null "$wdmin"
+            sudo ./minify-html -s "$wdout" -o "$wdmin" --css --js
           done
     - name: Prepare
       run: |
