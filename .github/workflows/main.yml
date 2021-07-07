@@ -32,6 +32,17 @@ jobs:
           cd ./mokk
           dokkoo build .
           cd ../
+          
+          curl -s https://raw.githubusercontent.com/wilsonzlin/minify-html/master/Cargo.toml --output Cargo.toml > /dev/null
+          version=$( awk -F ' = ' '$1 ~ /version/ { gsub(/[\"]/, "", $2); printf("%s",$2) }' Cargo.toml )
+          curl -s -L https://wilsonl.in/minify-html/bin/${version}-linux-x86_64 --output minify-html > /dev/null
+          chmod +x ./minify-html
+          shopt -s globstar
+          for f in ./mokk/output/**/*
+          do
+            ./minify-html -s $f -o "${f/output/min}" --css --js
+          done
+
           cp -ar ./mokk/output/* ./gh-pages
           if [ -f "./mokk/postbuild.sh" ]; then
               chmod +x ./mokk/postbuild.sh && ./mokk/postbuild.sh
