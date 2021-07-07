@@ -41,8 +41,8 @@ jobs:
           for f in ./mokk/output/**/*.html
           do
             escapedpath=$(printf %q "$f")
-            fullpath="$(realpath escapedpath)"
-            fullminpath='${fullpath/output/min}'
+            fullpath="$(realpath $escapedpath)"
+            fullminpath=${fullpath/output/min}
             echo $escapedpath
             echo $fullpath
             echo $fullminpath
