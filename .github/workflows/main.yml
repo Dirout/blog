@@ -41,7 +41,9 @@ jobs:
           for f in ./mokk/output/**/*.html
           do
             quotedpath=$(echo '"'$f'"')
+            fullpath=$(realpath $quotedpath)
             minpath=${quotedpath/output/min}
+            echo $fullpath
             echo $minpath
             install -D /dev/null $minpath
             sudo ./minify-html -s $quotedpath -o $minpath --css --js
