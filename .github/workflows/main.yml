@@ -42,7 +42,8 @@ jobs:
           do
             fullpath=$(realpath $f)
             fullminpath="${fullpath/output/min}"
-            echo fullminpath
+            echo $fullminpath
+            install -D /dev/null $fullminpath
             sudo ./minify-html -s $fullpath -o $fullminpath --css --js
           done
     - name: Prepare
