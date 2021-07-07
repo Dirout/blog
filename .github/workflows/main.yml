@@ -39,34 +39,34 @@ jobs:
           chmod +x ./minify-html
           shopt -s globstar
           
-          for f in ./mokk/output/**/*.html
+          for h in ./mokk/output/**/*.html
           do
-            workingdir=$(pwd)
-            minpath=${f/output/min}
-            wdout=${f/./$workingdir}
-            wdmin=${minpath/./$workingdir}
-            install -D /dev/null "$wdmin"
-            sudo ./minify-html -s "$wdout" -o "$wdmin" --css --js
+            hworkingdir=$(pwd)
+            hminpath=${f/output/min}
+            hwdout=${f/./$hworkingdir}
+            hwdmin=${hminpath/./$hworkingdir}
+            install -D /dev/null "$hwdmin"
+            sudo ./minify-html -s "$hwdout" -o "$hwdmin" --css --js
           done
           
-          for f in ./mokk/output/**/*.css
+          for c in ./mokk/output/**/*.css
           do
-            workingdir=$(pwd)
-            minpath=${f/output/min}
-            wdout=${f/./$workingdir}
-            wdmin=${minpath/./$workingdir}
-            install -D /dev/null "$wdmin"
-            sudo ./minify-html -s "$wdout" -o "$wdmin" --css
+            cworkingdir=$(pwd)
+            cminpath=${f/output/min}
+            cwdout=${f/./$cworkingdir}
+            cwdmin=${cminpath/./$cworkingdir}
+            install -D /dev/null "$cwdmin"
+            sudo ./minify-html -s "$cwdout" -o "$cwdmin" --css
           done
           
-          for f in ./mokk/output/**/*.js
+          for j in ./mokk/output/**/*.js
           do
             workingdir=$(pwd)
-            minpath=${f/output/min}
-            wdout=${f/./$workingdir}
-            wdmin=${minpath/./$workingdir}
-            install -D /dev/null "$wdmin"
-            sudo ./minify-html -s "$wdout" -o "$wdmin" --js
+            jminpath=${f/output/min}
+            jwdout=${f/./$jworkingdir}
+            jwdmin=${jminpath/./$jworkingdir}
+            install -D /dev/null "$jwdmin"
+            sudo ./minify-html -s "$jwdout" -o "$jwdmin" --js
           done
     - name: Prepare
       run: |
