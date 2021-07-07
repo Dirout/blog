@@ -40,7 +40,7 @@ jobs:
           shopt -s globstar
           for f in ./mokk/output/**/*.html
           do
-            quotedpath=$(echo "'"$f"'")
+            quotedpath=$(echo '"'$f'"')
             minpath=${quotedpath/output/min}
             echo $minpath
             install -D /dev/null $minpath
