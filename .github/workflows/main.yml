@@ -40,8 +40,8 @@ jobs:
           shopt -s globstar
           for f in ./mokk/output/**/*.html
           do
-            escapedpath=$(printf %q "$f")
-            fullpath="$(realpath $escapedpath)"
+            quotedpath=$(echo "'"$f"'")
+            fullpath="$(realpath $quotedpath)"
             fullminpath=${fullpath/output/min}
             echo $escapedpath
             echo $fullpath
