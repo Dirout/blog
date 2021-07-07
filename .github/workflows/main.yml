@@ -55,7 +55,6 @@ jobs:
               chmod +x ./mokk/postbuild.sh && ./mokk/postbuild.sh
           fi
           sudo ./minify-html -s "./gh-pages/assets/css/style.css" -o "./gh-pages/assets/css/style.css" --css
-          sudo ./minify-html -s "./gh-pages/assets/js/main.js" -o "./gh-pages/assets/js/main.js" --js
           touch ./gh-pages/.nojekyll
           tee -a ./gh-pages/.nojekyll > /dev/null <<EOT
 
